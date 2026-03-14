@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>BECE, WASSCE & JAMB Exam Preparation | Eben Math & Science Academy</title>
+    <meta name="description" content="Master your BECE, WASSCE, and JAMB exams with Eben Math & Science Academy. Get targeted exam success in South Africa without anxiety through specialized structural comprehension and mental math techniques.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="BECE, WASSCE & JAMB Exam Preparation | Eben Math & Science Academy">
+    <meta property="og:description" content="Targeted exam success without anxiety. Specialized preparation for BECE, WASSCE, and JAMB through structural comprehension and mental math techniques.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.ebenmathscience.co.za/assets/images/og-exam-prep.jpg">
+    <meta property="og:url" content="https://www.ebenmathscience.co.za/exam-prep.html">
+    <meta property="og:site_name" content="Eben Math & Science Academy">
+
+    <!-- LocalBusiness Schema for South Africa -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Eben Math and Science Academy",
+        "alternateName": "Hepa Plus",
+        "description": "An elite academic institution dedicated to demystifying mathematics and pure sciences for Basic, JHS, and SHS levels, offering specialized preparation for BECE, WASSCE, and JAMB.",
+        "url": "https://www.ebenmathscience.co.za",
+        "logo": "https://www.ebenmathscience.co.za/assets/images/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Johannesburg",
+          "addressRegion": "Gauteng",
+          "addressCountry": "ZA"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "South Africa"
+        },
+        "priceRange": "$$",
+        "telephone": "+27-00-000-0000"
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif']
+            },
+            colors: {
+              primary: '#0C102A',
+              secondary: '#3A5683',
+              accent: '#8AA4C8',
+              bglight: '#F8FAFC'
+            }
+          }
+        }
+      }
+    </script>
+    
+    <style>
+      .text-accent {
+        color: #8AA4C8;
+      }
+      .hover\:text-accent:hover {
+        color: #8AA4C8;
+      }
+      .footer-nav-wrapper nav {
+        display: flex !important;
+        flex-direction: column !important;
+        margin-left: 0 !important;
+        gap: 1rem;
+      }
+      .footer-nav-wrapper nav > * {
+        margin-left: 0 !important;
+      }
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body class="bg-[#F8FAFC] text-[#0C102A] font-sans antialiased selection:bg-[#3A5683] selection:text-white overflow-x-hidden">
+    <header class="fixed top-0 left-0 w-full z-50 px-6 md:px-12 py-4 md:py-6 flex justify-between items-center mix-blend-difference">
+      <div class="text-white font-extrabold text-xl md:text-2xl tracking-tighter uppercase relative z-50">
+        HEPA PLUS<span class="text-[#8AA4C8]">.</span>
+      </div>
+      
+      <nav class="hidden md:flex space-x-8 text-sm font-semibold">
+        <a href="index.html" class="text-white hover:text-accent transition-colors">
+          Home
+        </a>
+        <a href="about.html" class="text-white hover:text-accent transition-colors">
+          About Us
+        </a>
+        <a href="courses.html" class="text-white hover:text-accent transition-colors">
+          Our Courses
+        </a>
+        <a href="exam-prep.html" class="text-white hover:text-accent transition-colors">
+          Exam Preparation
+        </a>
+        <a href="contact.html" class="text-white hover:text-accent transition-colors">
+          Contact Us
+        </a>
+      </nav>
+      
+      <button id="mobile-menu-btn" class="block md:hidden text-white focus:outline-none z-50 transition-transform" aria-label="Toggle mobile menu">
+        <svg id="hamburger-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg id="close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </header>
+    
+    <div id="mobile-menu" class="fixed inset-0 bg-[#0C102A] z-40 flex-col items-center justify-center space-y-8 text-lg font-bold uppercase tracking-widest" style="display:none; clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);">
+      <a href="index.html" class="mobile-link text-white hover:text-accent transition-colors">
+        Home
+      </a>
+      <a href="about.html" class="mobile-link text-white hover:text-accent transition-colors">
+        About Us
+      </a>
+      <a href="courses.html" class="mobile-link text-white hover:text-accent transition-colors">
+        Our Courses
+      </a>
+      <a href="exam-prep.html" class="mobile-link text-white hover:text-accent transition-colors">
+        Exam Preparation
+      </a>
+      <a href="contact.html" class="mobile-link text-white hover:text-accent transition-colors">
+        Contact Us
+      </a>
+    </div>
+    
+    <main>
+      <section class="relative bg-[#0C102A] pt-32 md:pt-48 pb-16 md:pb-24 px-6 md:px-12 overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10 page-header-content">
+          <div class="flex items-center gap-2 text-[#8AA4C8] text-xs font-bold uppercase tracking-widest mb-6">
+            <a href="index.html" class="hover:text-white transition-colors">
+              Home
+            </a>
+            <span>/</span>
+            <span class="text-white">
+              Exam Prep
+            </span>
+          </div>
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white uppercase tracking-tighter leading-none mb-6">
+            Exam<br>
+            <span class="text-[#3A5683] font-light">
+              Preparation
+            </span>
+          </h1>
+          <p class="text-[#8AA4C8] max-w-2xl text-lg md:text-xl font-light leading-relaxed">
+            Targeted methodologies designed to eliminate anxiety and secure definitive academic victories across all major standardized assessments.
+          </p>
+        </div>
+      </section>
+      
+      <section class="py-20 md:py-32 bg-[#F8FAFC] px-6 md:px-12 border-b border-[#0C102A]/5 animate-section">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center">
+          <div class="lg:col-span-5">
+            <h2 class="text-xs md:text-sm font-extrabold uppercase tracking-widest text-[#3A5683] mb-4">
+              Junior High School
+            </h2>
+            <h3 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-[#0C102A] mb-6 uppercase">
+              BECE <span class="font-light">Mastery</span>
+            </h3>
+            <p class="text-[#3A5683] text-base md:text-lg leading-relaxed mb-8">
+              The Basic Education Certificate Examination is the first critical threshold in a student's academic journey. We replace rote memorization with structural comprehension to ensure JHS students pass with absolute confidence.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4 text-[#0C102A] font-semibold">
+                <div class="w-1.5 h-1.5 bg-[#3A5683] mt-2 rounded-full flex-shrink-0"></div>
+                <span>
+                  Core topic distillation & fundamental strengthening
+                </span>
+              </li>
+              <li class="flex items-start gap-4 text-[#0C102A] font-semibold">
+                <div class="w-1.5 h-1.5 bg-[#3A5683] mt-2 rounded-full flex-shrink-0"></div>
+                <span>
+                  Time-management drills for objective papers
+                </span>
+              </li>
+              <li class="flex items-start gap-4 text-[#0C102A] font-semibold">
+                <div class="w-1.5 h-1.5 bg-[#3A5683] mt-2 rounded-full flex-shrink-0"></div>
+                <span>
+                  Step-by-step logic framing for Section B mechanics
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-7 bg-[#3A5683]/5 border border-[#3A5683]/10 p-8 md:p-16 relative overflow-hidden group">
+            <span class="absolute -right-8 -bottom-8 text-[12rem] font-black text-[#0C102A]/5 leading-none transition-transform duration-700 group-hover:scale-110">
+              01
+            </span>
+            <div class="relative z-10 text-xl md:text-3xl font-light tracking-tight text-[#0C102A] leading-snug">
+              "Success at the BECE level requires transitioning from passive learning to active problem-solving. We build the architecture of confidence."
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="py-20 md:py-32 bg-white px-6 md:px-12 border-b border-[#0C102A]/5 animate-section">
+        <div class="max-w-7xl mx-auto flex flex-col-reverse lg:grid lg:grid-cols-12 gap-12 lg:gap-24 items-center">
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="bg-[#0C102A] text-white p-8 group hover:bg-[#3A5683] transition-colors duration-500">
+              <h4 class="text-xl font-bold mb-4 border-b border-white/20 pb-4">
+                Core Mathematics
+              </h4>
+              <p class="text-[#8AA4C8] text-sm leading-relaxed group-hover:text-white/80 transition-colors">
+                Advanced algebraic manipulation, statistical analysis, and geometric proofs deconstructed for immediate application.
+              </p>
+            </div>
+            <div class="bg-[#F8FAFC] border border-[#0C102A]/10 p-8 group hover:border-[#3A5683] transition-colors duration-500 sm:mt-8">
+              <h4 class="text-xl font-bold text-[#0C102A] mb-4 border-b border-[#0C102A]/10 pb-4">
+                Elective Sciences
+              </h4>
+              <p class="text-[#3A5683] text-sm leading-relaxed">
+                Physics, Chemistry, and Elective Math modules engineered specifically to meet rigorous university admission standards.
+              </p>
+            </div>
+          </div>
+          <div class="lg:col-span-5">
+            <h2 class="text-xs md:text-sm font-extrabold uppercase tracking-widest text-[#3A5683] mb-4">
+              Senior High School
+            </h2>
+            <h3 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-[#0C102A] mb-6 uppercase">
+              WASSCE <span class="font-light">Directives</span>
+            </h3>
+            <p class="text-[#3A5683] text-base md:text-lg leading-relaxed">
+              The WASSCE demands high-level cognitive application. Our SHS curriculum focuses strictly on advanced problem-solving techniques, ensuring students can parse complex multi-step equations under strict exam time constraints.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="py-20 md:py-32 bg-[#3A5683]/5 px-6 md:px-12 animate-section">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-16 md:mb-24">
+            <h2 class="text-xs md:text-sm font-extrabold uppercase tracking-widest text-[#3A5683] mb-4">
+              Tertiary Entry
+            </h2>
+            <h3 class="text-4xl md:text-5xl font-extrabold tracking-tighter text-[#0C102A] uppercase">
+              JAMB <span class="font-light">Tactics</span>
+            </h3>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-8 md:p-10 border border-[#0C102A]/5 hover:shadow-xl transition-shadow duration-500">
+              <div class="text-3xl font-light text-[#3A5683] mb-6">
+                01.
+              </div>
+              <h4 class="text-lg font-bold text-[#0C102A] mb-3 uppercase tracking-wider">
+                Format Familiarity
+              </h4>
+              <p class="text-[#3A5683] text-sm leading-relaxed">
+                Deep-dive into the CBT (Computer Based Test) environment, eliminating technical anxiety well before examination day.
+              </p>
+            </div>
+            <div class="bg-[#3A5683] text-white p-8 md:p-10 shadow-lg transform md:-translate-y-4">
+              <div class="text-3xl font-light text-[#8AA4C8] mb-6">
+                02.
+              </div>
+              <h4 class="text-lg font-bold mb-3 uppercase tracking-wider">
+                Pattern Recognition
+              </h4>
+              <p class="text-[#8AA4C8] text-sm leading-relaxed">
+                Identifying recurring question structures and logical traps specific to the JAMB testing methodology.
+              </p>
+            </div>
+            <div class="bg-white p-8 md:p-10 border border-[#0C102A]/5 hover:shadow-xl transition-shadow duration-500">
+              <div class="text-3xl font-light text-[#3A5683] mb-6">
+                03.
+              </div>
+              <h4 class="text-lg font-bold text-[#0C102A] mb-3 uppercase tracking-wider">
+                Velocity Training
+              </h4>
+              <p class="text-[#3A5683] text-sm leading-relaxed">
+                Rapid-fire calculation drills designed to maximize correct responses within the stringent time limits allowed.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="py-20 md:py-32 bg-[#0C102A] px-6 md:px-12 text-center relative overflow-hidden animate-section">
+        <div class="absolute inset-0 z-0 flex items-center justify-center opacity-5">
+          <span class="text-[30vw] font-black text-white whitespace-nowrap">
+            SPEED
+          </span>
+        </div>
+        <div class="max-w-4xl mx-auto relative z-10">
+          <h2 class="text-xs md:text-sm font-extrabold uppercase tracking-widest text-[#8AA4C8] mb-6">
+            The Hepa Plus Advantage
+          </h2>
+          <h3 class="text-4xl md:text-6xl font-light tracking-tighter text-white mb-8">
+            Cognitive Velocity &<br>
+            <span class="font-extrabold">Mental Math</span>
+          </h3>
+          <p class="text-[#8AA4C8] text-lg md:text-xl leading-relaxed mb-12 font-light">
+            We equip our students with alternative, hyper-efficient calculation methodologies. By training the mind to bypass standard, long-form arithmetic, students secure vital extra minutes during high-stakes examinations.
+          </p>
+          <div class="inline-flex flex-wrap justify-center gap-4">
+            <span class="px-6 py-2 border border-white/20 text-white text-sm font-semibold uppercase tracking-widest rounded-full">
+              Vedic Math Principles
+            </span>
+            <span class="px-6 py-2 border border-white/20 text-white text-sm font-semibold uppercase tracking-widest rounded-full">
+              Shortcut Algorithms
+            </span>
+            <span class="px-6 py-2 border border-white/20 text-white text-sm font-semibold uppercase tracking-widest rounded-full">
+              Accuracy Checking
+            </span>
+          </div>
+        </div>
+      </section>
+      
+      <section class="cta-section py-20 md:py-32 px-6 md:px-12 bg-[#3A5683] text-center flex flex-col items-center justify-center">
+        <h2 class="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tighter text-white max-w-4xl mb-6 md:mb-8">
+          Ready to architect your child's academic success?
+        </h2>
+        <p class="text-[#8AA4C8] text-base md:text-lg max-w-2xl mb-10 md:mb-12 font-light px-4">
+          Enroll today and watch the transformation from systemic fear to genuine mathematical mastery.
+        </p>
+        <a href="contact.html" class="bg-[#0C102A] text-white px-8 md:px-12 py-4 md:py-5 rounded-none font-bold text-sm md:text-base uppercase tracking-widest hover:bg-white hover:text-[#0C102A] transition-colors duration-300">
+          Contact Guardianship
+        </a>
+      </section>
+    </main>
+    
+    <footer class="bg-[#0C102A] text-white pt-16 md:pt-24 pb-10 md:pb-12 px-6 md:px-12">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 border-b border-white/10 pb-12 md:pb-16">
+        <div class="max-w-sm">
+          <div class="text-white font-extrabold text-2xl md:text-3xl tracking-tighter uppercase mb-4 md:mb-6">
+            HEPA PLUS<span class="text-[#8AA4C8]">.</span>
+          </div>
+          <p class="text-white/50 text-sm leading-relaxed">
+            An elite academic institution dedicated to demystifying mathematics and pure sciences for Basic, JHS, and SHS levels.
+          </p>
+        </div>
+        <div class="w-full md:w-auto footer-nav-wrapper">
+          <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-6">
+            Directory
+          </h4>
+          <nav class="hidden md:flex space-x-8 text-sm font-semibold">
+            <a href="index.html" class="text-white hover:text-accent transition-colors">
+              Home
+            </a>
+            <a href="about.html" class="text-white hover:text-accent transition-colors">
+              About Us
+            </a>
+            <a href="courses.html" class="text-white hover:text-accent transition-colors">
+              Our Courses
+            </a>
+            <a href="exam-prep.html" class="text-white hover:text-accent transition-colors">
+              Exam Preparation
+            </a>
+            <a href="contact.html" class="text-white hover:text-accent transition-colors">
+              Contact Us
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left text-xs text-white/30 uppercase tracking-widest">
+        <p>
+          &copy; 2024 Eben Math and Science Academy (Hepa Plus). All rights reserved.
+        </p>
+        <p class="mt-4 md:mt-0">
+          Maths Made Simple
+        </p>
+      </div>
+    </footer>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        gsap.registerPlugin(ScrollTrigger);
+        
+        const menuTl = gsap.timeline({
+          paused: true,
+          reversed: true
+        });
+        
+        menuTl.to('#mobile-menu', {
+          display: 'flex',
+          clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+          duration: 0.8,
+          ease: 'power4.inOut'
+        }).fromTo('.mobile-link', {
+          y: 30,
+          opacity: 0
+        }, {
+          y: 0,
+          opacity: 1,
+          stagger: 0.1,
+          duration: 0.5,
+          ease: 'power3.out'
+        }, '-=0.4');
+        
+        const btn = document.getElementById('mobile-menu-btn');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+        
+        btn.addEventListener('click', () => {
+          if (menuTl.reversed()) {
+            menuTl.play();
+            hamburgerIcon.classList.add('hidden');
+            closeIcon.classList.remove('hidden');
+          } else {
+            menuTl.reverse();
+            hamburgerIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+          }
+        });
+        
+        gsap.from('.page-header-content > *', {
+          y: 30,
+          opacity: 0,
+          stagger: 0.1,
+          duration: 1,
+          ease: 'power3.out',
+          delay: 0.2
+        });
+        
+        gsap.utils.toArray('.animate-section').forEach(section => {
+          gsap.from(section.children, {
+            scrollTrigger: {
+              trigger: section,
+              start: 'top 80%'
+            },
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: 'power3.out'
+          });
+        });
+        
+        gsap.from('.cta-section > *', {
+          scrollTrigger: {
+            trigger: '.cta-section',
+            start: 'top 80%'
+          },
+          y: 40,
+          opacity: 0,
+          stagger: 0.15,
+          duration: 0.8,
+          ease: 'power3.out'
+        });
+        
+        gsap.from('footer > div', {
+          scrollTrigger: {
+            trigger: 'footer',
+            start: 'top 90%'
+          },
+          y: 30,
+          opacity: 0,
+          stagger: 0.2,
+          duration: 0.8,
+          ease: 'power3.out'
+        });
+      });
+    </script>
+  </body>
+</html>

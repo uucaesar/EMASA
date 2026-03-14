@@ -1,0 +1,377 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>About EMASA | Empowering Minds in Maths &amp; Science</title>
+    <meta name="description" content="Learn about EMASA (Eben Maths and Science Academy). Our mission to demystify STEM, our teaching philosophy, and how we help South African learners excel in Matric and beyond.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="About EMASA | Empowering Minds in Maths &amp; Science">
+    <meta property="og:description" content="Discover our mission to build critical thinkers and boost APS scores through personalized STEM education.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ebenmathandscience.com/about">
+    <meta property="og:image" content="https://www.ebenmathandscience.com/assets/images/og-image.jpg">
+    
+    <!-- LocalBusiness Schema (South Africa - ZA) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Eben Math and Science Academy",
+        "image": "https://www.ebenmathandscience.com/assets/images/logo.png",
+        "description": "An elite academic institution dedicated to demystifying mathematics and pure sciences through expert tuition for CAPS and IEB curriculums.",
+        "url": "https://www.ebenmathandscience.com",
+        "telephone": "+27-00-000-0000",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Academic Way",
+          "addressLocality": "Johannesburg",
+          "addressRegion": "Gauteng",
+          "postalCode": "2000",
+          "addressCountry": "ZA"
+        }
+      }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&amp;display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+      .text-accent {
+        color: #8AA4C8;
+      }
+      .hover\:text-accent:hover {
+        color: #8AA4C8;
+      }
+    </style>
+    
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body class="bg-[#F8FAFC] text-[#0C102A] font-sans antialiased selection:bg-[#3A5683] selection:text-white overflow-x-hidden">
+    
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-50 px-6 md:px-12 py-4 md:py-6 flex justify-between items-center mix-blend-difference" id="header-nav">
+      <a href="index.html" class="flex items-center space-x-3 relative z-50 hover:opacity-80 transition-opacity" id="nav-logo">
+        
+        <div class="text-white font-extrabold text-xl md:text-2xl tracking-tighter uppercase" id="brand-name">
+          EMASA<span class="text-[#8AA4C8]" id="brand-dot">.</span>
+        </div>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8 text-sm font-semibold" id="desktop-nav">
+        <a href="index.html" class="text-white hover:text-accent transition-colors" id="nav-home">Home</a>
+        <a href="about.html" class="text-white hover:text-accent transition-colors" id="nav-about">About Us</a>
+        <a href="courses.html" class="text-white hover:text-accent transition-colors" id="nav-courses">Our Courses</a>
+        <a href="exam-prep.html" class="text-white hover:text-accent transition-colors" id="nav-prep">Exam Preparation</a>
+        <a href="contact.html" class="text-white hover:text-accent transition-colors" id="nav-contact">Contact Us</a>
+      </nav>
+      
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="block md:hidden text-white focus:outline-none z-50 transition-transform" aria-label="Toggle mobile menu">
+        <svg id="hamburger-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" id="gama-mmpw5vrb-0"></path>
+        </svg>
+        <svg id="close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" id="gama-mmpw5vrb-1"></path>
+        </svg>
+      </button>
+    </header>
+    
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-[#0C102A] z-40 flex-col items-center justify-center space-y-8 text-lg font-bold uppercase tracking-widest" style="display:none; clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);">
+      <a href="index.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mmpw5vrb-2">Home</a>
+      <a href="about.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mmpw5vrb-3">About Us</a>
+      <a href="courses.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mmpw5vrb-4">Our Courses</a>
+      <a href="exam-prep.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mmpw5vrb-5">Exam Preparation</a>
+      <a href="contact.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mmpw5vrb-6">Contact Us</a>
+    </div>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+      
+      <!-- Hero Section -->
+      <section class="pt-32 pb-16 md:pt-48 md:pb-24 px-6 md:px-12 bg-[#0C102A] relative overflow-hidden" id="gama-mmpw5vrb-7">
+        <div class="absolute inset-0 z-0 flex items-center justify-end opacity-5" id="gama-mmpw5vrb-8">
+          <span class="text-[30vw] font-black tracking-tighter leading-none text-white whitespace-nowrap translate-x-1/4" id="gama-mmpw5vrb-9">
+            EMPOWER
+          </span>
+        </div>
+        
+        <div class="max-w-7xl mx-auto relative z-10" id="gama-mmpw5vrb-10">
+          <div class="flex items-center space-x-2 text-[#8AA4C8] text-xs font-bold uppercase tracking-widest mb-6" id="gama-mmpw5vrb-11">
+            <a href="index.html" class="hover:text-white transition-colors" id="gama-mmpw5vrb-12">Home</a>
+            <span id="gama-mmpw5vrb-13">/</span>
+            <span class="text-white" id="gama-mmpw5vrb-14">About Us</span>
+          </div>
+          <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-white uppercase mb-8" id="gama-mmpw5vrb-15">
+            Empowering Minds. <span class="text-[#3A5683] font-light" id="gama-mmpw5vrb-16">SIMPLIFYING</span> Maths &amp; Science.
+          </h1>
+          <p class="text-[#8AA4C8] text-lg md:text-xl max-w-2xl font-light leading-relaxed" id="gama-mmpw5vrb-17">
+            At EMASA, we don’t just teach formulas. We build critical thinkers, boost APS scores, and shape confident learners who are ready for Matric and beyond.
+          </p>
+        </div>
+      </section>
+      
+      <!-- Section: Our Story -->
+      <section class="py-20 md:py-32 px-6 md:px-12 bg-[#F8FAFC]" id="gama-mmpw5vrb-18">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24 items-start" id="gama-mmpw5vrb-19">
+          <div class="w-full lg:w-1/3 animate-on-scroll" id="gama-mmpw5vrb-20">
+            <div class="text-[8rem] md:text-[12rem] font-light leading-none text-[#0C102A]/10 -ml-2 mb-4" id="gama-mmpw5vrb-21">
+              01
+            </div>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-[#0C102A] tracking-tighter uppercase mb-6" id="gama-mmpw5vrb-22">
+              Our Story: <br id="gama-mmpw5vrb-23">
+              <span class="text-[#3A5683] font-light" id="gama-mmpw5vrb-24">Why We Started</span>
+            </h2>
+            <div class="w-12 h-1 bg-[#3A5683]" id="gama-mmpw5vrb-25"></div>
+          </div>
+          
+          <div class="w-full lg:w-2/3 animate-on-scroll" id="gama-mmpw5vrb-26">
+            <p class="text-xl md:text-2xl font-light text-[#0C102A] leading-relaxed mb-10" id="gama-mmpw5vrb-27">
+              At EMASA (Eben Maths and Science Academy), we noticed a common challenge in the South African education system: in large, fast-paced classrooms, too many capable learners were falling behind in core STEM subjects.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12" id="gama-mmpw5vrb-28">
+              <div id="gama-mmpw5vrb-29">
+                <h3 class="text-sm font-bold uppercase tracking-widest text-[#3A5683] mb-4" id="gama-mmpw5vrb-30">
+                  Changing the Narrative
+                </h3>
+                <p class="text-[#0C102A]/70 leading-relaxed" id="gama-mmpw5vrb-31">
+                  We constantly heard learners say, "I'm just not a Maths person," or "Physics is too hard." We founded EMASA to change that. Whether navigating the jump from Grade 9 to Grade 10 subject choices, or facing the high-pressure run-up to Matric Finals, learners need more than just textbook reading—they need guidance.
+                </p>
+              </div>
+              <div id="gama-mmpw5vrb-32">
+                <h3 class="text-sm font-bold uppercase tracking-widest text-[#3A5683] mb-4" id="gama-mmpw5vrb-33">
+                  From Vision to Reality
+                </h3>
+                <p class="text-[#0C102A]/70 leading-relaxed" id="gama-mmpw5vrb-34">
+                  What started as a vision to provide focused, high-quality extra lessons has grown into a dedicated academy that helps learners turn academic anxiety into academic excellence, unlocking the doors to their future careers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Mission & Vision -->
+      <section class="py-20 md:py-32 px-6 md:px-12 bg-white border-y border-[#0C102A]/10" id="gama-mmpw5vrb-35">
+        <div class="max-w-7xl mx-auto" id="gama-mmpw5vrb-36">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12" id="gama-mmpw5vrb-37">
+            <!-- Mission -->
+            <div class="animate-on-scroll" id="gama-mmpw5vrb-38">
+              <div class="flex items-center space-x-4 mb-6" id="gama-mmpw5vrb-39">
+                
+                <h2 class="text-2xl font-extrabold uppercase tracking-tight" id="gama-mmpw5vrb-41">Our Mission</h2>
+              </div>
+              <p class="text-lg text-[#0C102A]/70 leading-relaxed" id="gama-mmpw5vrb-42">
+                To provide top-tier, personalised extra tuition in Mathematics and Physical Sciences that bridges the gap between the classroom and true understanding. We equip learners with the knowledge, exam techniques, and confidence to master the CAPS and IEB curriculums.
+              </p>
+            </div>
+            <!-- Vision -->
+            <div class="animate-on-scroll" id="gama-mmpw5vrb-43">
+              <div class="flex items-center space-x-4 mb-6" id="gama-mmpw5vrb-44">
+                
+                <h2 class="text-2xl font-extrabold uppercase tracking-tight" id="gama-mmpw5vrb-46">Our Vision</h2>
+              </div>
+              <p class="text-lg text-[#0C102A]/70 leading-relaxed" id="gama-mmpw5vrb-47">
+                To be South Africa’s most trusted educational support academy, recognised for transforming learners' relationships with Maths and Science and helping them secure the university entrance requirements they need to pursue their dreams.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section: Teaching Philosophy (The EMASA Edge) -->
+      <section class="py-20 md:py-32 px-6 md:px-12 bg-[#0C102A] text-white" id="gama-mmpw5vrb-48">
+        <div class="max-w-7xl mx-auto" id="gama-mmpw5vrb-49">
+          <div class="mb-16 md:mb-24 animate-on-scroll" id="gama-mmpw5vrb-50">
+            <h2 class="text-xs md:text-sm font-extrabold uppercase tracking-widest text-[#8AA4C8] mb-4" id="gama-mmpw5vrb-51">Teaching Philosophy</h2>
+            <p class="text-4xl md:text-6xl font-extrabold tracking-tighter uppercase" id="gama-mmpw5vrb-52">
+              The <span class="font-light text-[#8AA4C8]" id="gama-mmpw5vrb-53">EMASA Edge</span>
+            </p>
+            <p class="mt-6 text-[#8AA4C8] max-w-2xl font-light" id="gama-mmpw5vrb-54">
+              We know that no subject is inherently "too difficult" when taught correctly. Our approach moves away from the traditional, overcrowded classroom dynamic.
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="gama-mmpw5vrb-55">
+            <div class="bg-[#1A2247] p-8 border border-white/5 animate-on-scroll" id="gama-mmpw5vrb-56">
+              <h3 class="text-xl font-bold mb-4 uppercase tracking-tight text-white" id="gama-mmpw5vrb-57">1. Understanding Over Memorisation</h3>
+              <p class="text-white/60 text-sm leading-relaxed" id="gama-mmpw5vrb-58">
+                Rote learning won't help with tricky Geometry or abstract Chemistry. We focus on the "why" and "how" behind theories, ensuring learners build a rock-solid foundation.
+              </p>
+            </div>
+            <div class="bg-[#1A2247] p-8 border border-white/5 animate-on-scroll" id="gama-mmpw5vrb-59">
+              <h3 class="text-xl font-bold mb-4 uppercase tracking-tight text-white" id="gama-mmpw5vrb-60">2. Exam Readiness &amp; Technique</h3>
+              <p class="text-white/60 text-sm leading-relaxed" id="gama-mmpw5vrb-61">
+                Knowing the work is only half the battle. We extensively use past NSC and IEB papers, teaching learners how to interpret questions and manage their time for maximum marks.
+              </p>
+            </div>
+            <div class="bg-[#1A2247] p-8 border border-white/5 animate-on-scroll" id="gama-mmpw5vrb-62">
+              <h3 class="text-xl font-bold mb-4 uppercase tracking-tight text-white" id="gama-mmpw5vrb-63">3. Confidence &amp; Mentorship</h3>
+              <p class="text-white/60 text-sm leading-relaxed" id="gama-mmpw5vrb-64">
+                Academic success is tied to self-belief. We celebrate small victories and encourage questions, helping learners tackle tests without fear in a supportive environment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Meet Our Experts -->
+      <section class="py-20 md:py-32 px-6 md:px-12 bg-white" id="gama-mmpw5vrb-65">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center" id="gama-mmpw5vrb-66">
+          <div class="w-full lg:w-1/2 animate-on-scroll" id="gama-mmpw5vrb-67">
+            <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter uppercase mb-8" id="gama-mmpw5vrb-68">
+              Meet Our <span class="text-[#3A5683] font-light" id="gama-mmpw5vrb-69">Experts</span>
+            </h2>
+            <p class="text-[#0C102A]/70 text-lg leading-relaxed mb-6" id="gama-mmpw5vrb-70">
+              At EMASA, our greatest asset is our team of educators. We aren't just individuals who are brilliant at Maths and Science—we are passionate about <em id="gama-mmpw5vrb-71">teaching</em> it.
+            </p>
+            <p class="text-[#0C102A]/70 leading-relaxed" id="gama-mmpw5vrb-72">
+              Our tutors are deeply familiar with the nuances of the South African curriculum. From helping a Grade 8 learner grasp basic algebra to preparing a Grade 12 learner for their final exams and National Benchmark Tests (NBTs), your child is in expert hands. We are patient, dedicated, and skilled at translating complex academic jargon into plain, easy-to-understand language.
+            </p>
+          </div>
+          <div class="w-full lg:w-1/2 animate-on-scroll grid grid-cols-2 gap-4" id="gama-mmpw5vrb-73">
+             <div class="aspect-[4/5] bg-[#F8FAFC] flex items-end overflow-hidden group" id="gama-mmpw5vrb-74">
+                <img src="https://images.unsplash.com/photo-1544717297-fa1563921525?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Eben - Lead Educator" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" id="gama-mmpw5vrb-75">
+             </div>
+             <div class="aspect-[4/5] bg-[#F8FAFC] flex items-end overflow-hidden group" id="gama-mmpw5vrb-76">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Lead Science Tutor" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" id="gama-mmpw5vrb-77">
+             </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section: Call to Action -->
+      <section class="py-24 md:py-32 px-6 md:px-12 bg-[#3A5683] text-center flex flex-col items-center justify-center animate-on-scroll" id="gama-mmpw5vrb-78">
+        <h2 class="text-4xl md:text-6xl font-extrabold tracking-tighter text-white max-w-4xl mb-6 md:mb-8 uppercase" id="gama-mmpw5vrb-79">
+          Let’s write your child’s academic success story together.
+        </h2>
+        <p class="text-white/80 text-lg md:text-xl max-w-2xl mb-12 font-light px-4" id="gama-mmpw5vrb-80">
+          Ready to take the stress out of Maths and Science? Whether the goal is to pass, achieve a bachelor's pass, or secure a distinction for university admission, we are here to help.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4" id="gama-mmpw5vrb-81">
+          <a href="contact.html" class="bg-[#0C102A] text-white px-8 md:px-12 py-4 md:py-5 rounded-none font-bold text-sm md:text-base uppercase tracking-widest hover:bg-white hover:text-[#0C102A] transition-colors duration-300" id="gama-mmpw5vrb-82">
+            Book a Free Assessment
+          </a>
+          <a href="courses.html" class="bg-transparent border border-white/20 text-white px-8 md:px-12 py-4 md:py-5 rounded-none font-bold text-sm md:text-base uppercase tracking-widest hover:bg-white/10 transition-colors duration-300" id="gama-mmpw5vrb-83">
+            Explore SUBJECTS</a>
+        </div>
+      </section>
+      
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-[#0C102A] text-white pt-16 md:pt-24 pb-10 md:pb-12 px-6 md:px-12" id="gama-mmpw5vrb-84">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 border-b border-white/10 pb-12 md:pb-16" id="gama-mmpw5vrb-85">
+        <div class="max-w-sm" id="gama-mmpw5vrb-86">
+          <div class="text-white font-extrabold text-2xl md:text-3xl tracking-tighter uppercase mb-4 md:mb-6" id="gama-mmpw5vrb-87">
+            EMASA<span class="text-[#8AA4C8]" id="gama-mmpw5vrb-88">.</span>
+          </div>
+          <p class="text-white/50 text-sm leading-relaxed" id="gama-mmpw5vrb-89">
+            An elite academic institution dedicated to simplifying mathematics and sciences for South African learners.
+          </p>
+        </div>
+        
+        <div class="w-full md:w-auto" id="gama-mmpw5vrb-90">
+          <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-6" id="gama-mmpw5vrb-91">Directory</h4>
+          <nav class="flex flex-col space-y-4 text-sm font-semibold" id="gama-mmpw5vrb-92">
+            <a href="index.html" class="text-white hover:text-accent transition-colors" id="gama-mmpw5vrb-93">Home</a>
+            <a href="about.html" class="text-white hover:text-accent transition-colors" id="gama-mmpw5vrb-94">About Us</a>
+            <a href="courses.html" class="text-white hover:text-accent transition-colors" id="gama-mmpw5vrb-95">Our Courses</a>
+            <a href="exam-prep.html" class="text-white hover:text-accent transition-colors" id="gama-mmpw5vrb-96">Exam Preparation</a>
+            <a href="contact.html" class="text-white hover:text-accent transition-colors" id="gama-mmpw5vrb-97">Contact Us</a>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left text-xs text-white/30 uppercase tracking-widest" id="gama-mmpw5vrb-98">
+        <p id="gama-mmpw5vrb-99">© 2026 Eben Maths and Science Academy (EMASA). All rights reserved.</p>
+      </div>
+    </footer>
+    
+    <!-- Animation Scripts -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        gsap.registerPlugin(ScrollTrigger);
+        
+        // Mobile Menu Logic
+        const menuTl = gsap.timeline({ paused: true, reversed: true });
+        menuTl.to('#mobile-menu', {
+          display: 'flex',
+          clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+          duration: 0.8,
+          ease: 'power4.inOut'
+        }).fromTo('.mobile-link', {
+          y: 30,
+          opacity: 0
+        }, {
+          y: 0,
+          opacity: 1,
+          stagger: 0.1,
+          duration: 0.5,
+          ease: 'power3.out'
+        }, '-=0.4');
+        
+        const btn = document.getElementById('mobile-menu-btn');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+        
+        btn.addEventListener('click', () => {
+          if (menuTl.reversed()) {
+            menuTl.play();
+            hamburgerIcon.classList.add('hidden');
+            closeIcon.classList.remove('hidden');
+          } else {
+            menuTl.reverse();
+            hamburgerIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+          }
+        });
+
+        // Page Load Animations
+        gsap.from('h1', { 
+          y: 30, 
+          opacity: 0, 
+          duration: 1, 
+          delay: 0.2, 
+          ease: 'power3.out' 
+        });
+        
+        // Scroll Animations
+        gsap.utils.toArray('.animate-on-scroll').forEach(element => {
+          gsap.from(element, {
+            scrollTrigger: {
+              trigger: element,
+              start: 'top 85%',
+            },
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            ease: 'power3.out'
+          });
+        });
+      });
+    </script>
+  
+</body></html>

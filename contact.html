@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Optimized SEO Meta Tags -->
+  <title>Contact Eben Math & Science Academy | Top STEM Tutoring</title>
+  <meta name="description" content="Contact Eben Math and Science Academy for expert Basic, JHS, and SHS STEM tutoring. Call our academic coordinators today to start your journey to academic excellence.">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Contact Eben Math & Science Academy | Top STEM Tutoring">
+  <meta property="og:description" content="Contact Eben Math and Science Academy for expert Basic, JHS, and SHS STEM tutoring. Call our academic coordinators today to start your journey to academic excellence.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ebenmathandscience.com/contact">
+  <meta property="og:image" content="https://www.ebenmathandscience.com/assets/og-image.jpg">
+  
+  <!-- LocalBusiness Schema (South Africa - ZA) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Eben Math and Science Academy",
+      "alternateName": "HEPA PLUS",
+      "description": "An elite academic institution dedicated to demystifying mathematics and pure sciences for Basic, JHS, and SHS levels.",
+      "telephone": [
+        "0542-778-572",
+        "0549-297-463"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "ZA"
+      },
+      "url": "https://www.ebenmathandscience.com"
+    }
+  </script>
+
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Styles -->
+  <style>
+    .text-accent {
+      color: #8AA4C8;
+    }
+    .hover\:text-accent:hover {
+      color: #8AA4C8;
+    }
+    input:focus, textarea:focus, select:focus {
+      outline: none !important;
+      box-shadow: none !important;
+    }
+    select {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%230C102A' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+      background-position: right 0.5rem center;
+      background-repeat: no-repeat;
+      background-size: 1.5em 1.5em;
+      padding-right: 2.5rem;
+    }
+  </style>
+  
+  <!-- GSAP Animation Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-[#F8FAFC] text-[#0C102A] font-sans antialiased selection:bg-[#3A5683] selection:text-white overflow-x-hidden">
+  
+  <!-- Header / Navigation -->
+  <header class="fixed top-0 left-0 w-full z-50 px-6 md:px-12 py-4 md:py-6 flex justify-between items-center mix-blend-difference">
+    <div class="text-white font-extrabold text-xl md:text-2xl tracking-tighter uppercase relative z-50">
+      HEPA PLUS<span class="text-[#8AA4C8]">.</span>
+    </div>
+    
+    <nav class="hidden md:flex space-x-8 text-sm font-semibold">
+      <a href="index.html" class="text-white hover:text-accent transition-colors">Home</a>
+      <a href="about.html" class="text-white hover:text-accent transition-colors">About Us</a>
+      <a href="courses.html" class="text-white hover:text-accent transition-colors">Our Courses</a>
+      <a href="exam-prep.html" class="text-white hover:text-accent transition-colors">Exam Preparation</a>
+      <a href="contact.html" class="text-white hover:text-accent transition-colors">Contact Us</a>
+    </nav>
+    
+    <button id="mobile-menu-btn" class="block md:hidden text-white focus:outline-none z-50 transition-transform" aria-label="Toggle mobile menu">
+      <svg id="hamburger-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+      <svg id="close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </header>
+  
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-[#0C102A] z-40 flex-col items-center justify-center space-y-8 text-lg font-bold uppercase tracking-widest" style="display:none; clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);">
+    <a href="index.html" class="mobile-link text-white hover:text-accent transition-colors">Home</a>
+    <a href="about.html" class="mobile-link text-white hover:text-accent transition-colors">About Us</a>
+    <a href="courses.html" class="mobile-link text-white hover:text-accent transition-colors">Our Courses</a>
+    <a href="exam-prep.html" class="mobile-link text-white hover:text-accent transition-colors">Exam Preparation</a>
+    <a href="contact.html" class="mobile-link text-white hover:text-accent transition-colors">Contact Us</a>
+  </div>
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 md:px-12 bg-[#0C102A] text-white overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <div class="absolute top-[-50%] right-[-10%] w-[100vw] h-[100vw] bg-[#3A5683]/10 rounded-full blur-[100px]"></div>
+      </div>
+      <div class="max-w-7xl mx-auto relative z-10 animate-fade-in-up">
+        <div class="flex items-center gap-3 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-[#8AA4C8] mb-8">
+          <a href="index.html" class="hover:text-white transition-colors">Home</a>
+          <span class="text-[#3A5683]">/</span>
+          <span class="text-white">Contact Us</span>
+        </div>
+        <h1 class="text-5xl sm:text-6xl md:text-8xl lg:text-[9rem] font-extrabold tracking-tighter uppercase mb-6 leading-none text-white/90">
+          Reach<br>
+          <span class="font-light text-white/50">Out.</span>
+        </h1>
+        <p class="text-lg md:text-xl font-light text-[#8AA4C8] max-w-2xl leading-relaxed mt-8">
+          We invite parents, guardians, and students to initiate their journey toward academic excellence. Our structural approach to demystifying STEM awaits.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Contact Details Section -->
+    <section class="py-20 md:py-32 px-6 md:px-12 bg-[#F8FAFC]">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-16 md:mb-24 fade-section">
+          <h2 class="text-xs md:text-sm font-extrabold uppercase tracking-widest text-[#3A5683] mb-4">Direct Lines</h2>
+          <p class="text-3xl sm:text-4xl md:text-6xl font-light tracking-tight text-[#0C102A] max-w-3xl leading-tight">
+            Speak directly with our academic coordinators.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <div class="fade-section border border-[#0C102A]/10 p-10 md:p-16 hover:bg-[#3A5683]/5 transition-colors duration-500 group bg-white">
+            <p class="text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-[#8AA4C8] mb-6 md:mb-8">Primary Hotline</p>
+            <p class="text-4xl sm:text-5xl md:text-7xl font-light tracking-tighter text-[#0C102A] group-hover:text-[#3A5683] transition-colors">
+              0542-778-572
+            </p>
+          </div>
+          <div class="fade-section border border-[#0C102A]/10 p-10 md:p-16 hover:bg-[#3A5683]/5 transition-colors duration-500 group bg-white">
+            <p class="text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-[#8AA4C8] mb-6 md:mb-8">Secondary Hotline</p>
+            <p class="text-4xl sm:text-5xl md:text-7xl font-light tracking-tighter text-[#0C102A] group-hover:text-[#3A5683] transition-colors">
+              0549-297-463
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Inquiry Form Section -->
+    <section class="py-20 md:py-32 px-6 md:px-12 bg-white border-y border-[#0C102A]/5">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24">
+        <div class="lg:col-span-5 fade-section">
+          <h2 class="text-xs md:text-sm font-extrabold uppercase tracking-widest text-[#3A5683] mb-4">Formal Inquiry</h2>
+          <p class="text-3xl sm:text-4xl md:text-6xl font-light tracking-tight text-[#0C102A] leading-tight mb-8">
+            Request supplementary education details.
+          </p>
+          <p class="text-[#3A5683] text-base md:text-lg leading-relaxed font-light">
+            Provide us with the student's current academic standing and specific areas of concern. We will construct a tailored response outlining our pedagogical framework.
+          </p>
+        </div>
+        <div class="lg:col-span-7 fade-section">
+          <form class="space-y-10 flex flex-col" onsubmit="event.preventDefault();">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8">
+              <div class="flex flex-col border-b border-[#0C102A]/20 pb-3 group">
+                <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#0C102A] transition-colors">Guardian / Student Name</label>
+                <input type="text" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter full name" required>
+              </div>
+              <div class="flex flex-col border-b border-[#0C102A]/20 pb-3 group">
+                <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#0C102A] transition-colors">Email Address</label>
+                <input type="email" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter email address" required>
+              </div>
+            </div>
+            <div class="flex flex-col border-b border-[#0C102A]/20 pb-3 group">
+              <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#0C102A] transition-colors">Academic Level</label>
+              <select class="w-full bg-transparent border-none outline-none text-[#0C102A] text-lg font-medium focus:ring-0 cursor-pointer appearance-none" required>
+                <option value="" disabled selected class="text-[#0C102A]/20">Select Level (Basic / JHS / SHS)</option>
+                <option value="basic">Basic Level Curriculum</option>
+                <option value="jhs">JHS Curricula</option>
+                <option value="shs">SHS Mastery</option>
+              </select>
+            </div>
+            <div class="flex flex-col border-b border-[#0C102A]/20 pb-3 group">
+              <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#0C102A] transition-colors">Message / Academic Concern</label>
+              <textarea rows="4" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0 resize-none" placeholder="Detail the mathematical or scientific inquiry..." required></textarea>
+            </div>
+            <button type="submit" class="self-start mt-4 bg-[#0C102A] text-white px-10 py-5 rounded-none font-bold uppercase tracking-[0.2em] hover:bg-[#3A5683] transition-colors duration-500 text-sm md:text-base w-full md:w-auto">
+              Submit Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <!-- YouTube Call to Action Section -->
+    <section class="py-24 md:py-40 px-6 md:px-12 bg-[#3A5683]/5">
+      <div class="max-w-4xl mx-auto flex flex-col items-center text-center fade-section">
+        <div class="w-16 h-16 md:w-20 md:h-20 bg-[#0C102A] text-white flex items-center justify-center rounded-full mb-8 md:mb-12">
+          <svg class="w-6 h-6 md:w-8 md:h-8 ml-1" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
+        </div>
+        <h2 class="text-[10px] md:text-xs font-extrabold uppercase tracking-[0.2em] text-[#3A5683] mb-4">Digital Broadcast</h2>
+        <p class="text-5xl sm:text-6xl md:text-8xl font-black tracking-tighter text-[#0C102A] uppercase mb-8 leading-none">
+          HEPA PLUS<br>
+          <span class="font-light text-[#3A5683]">TV.</span>
+        </p>
+        <p class="text-lg md:text-2xl font-light text-[#3A5683] mb-12 max-w-2xl leading-relaxed">
+          Subscribe to our YouTube channel <span class="font-bold text-[#0C102A]">@ebenagetv</span> for free architectural breakdowns of complex math problems and scientific theories.
+        </p>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="border border-[#0C102A] text-[#0C102A] px-10 py-5 rounded-none font-bold uppercase tracking-[0.2em] hover:bg-[#0C102A] hover:text-white transition-colors duration-500 text-sm md:text-base">
+          Watch Open Lessons
+        </a>
+      </div>
+    </section>
+    
+    <!-- Location Footer Summary Section -->
+    <section class="py-20 md:py-32 px-6 md:px-12 bg-[#0C102A] text-white text-center border-t border-white/10">
+      <div class="max-w-4xl mx-auto fade-section">
+        <h2 class="text-4xl sm:text-5xl md:text-7xl font-light tracking-tighter mb-8 leading-tight">
+          Based in Ghana.<br>
+          <span class="font-extrabold">Accessible Nationwide.</span>
+        </h2>
+        <p class="text-[#8AA4C8] text-base md:text-xl font-light leading-relaxed max-w-2xl mx-auto">
+          Our physical administration is rooted in Ghana, but our robust digital infrastructure ensures that top-tier STEM tutoring is seamlessly accessible to students everywhere. Distance is no longer a barrier to comprehension.
+        </p>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-[#0C102A] text-white pt-16 md:pt-24 pb-10 md:pb-12 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 border-b border-white/10 pb-12 md:pb-16">
+      <div class="max-w-sm">
+        <div class="text-white font-extrabold text-2xl md:text-3xl tracking-tighter uppercase mb-4 md:mb-6">
+          HEPA PLUS<span class="text-[#8AA4C8]">.</span>
+        </div>
+        <p class="text-white/50 text-sm leading-relaxed">
+          An elite academic institution dedicated to demystifying mathematics and pure sciences for Basic, JHS, and SHS levels.
+        </p>
+      </div>
+      <div class="w-full md:w-auto">
+        <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-6">Directory</h4>
+        <nav class="flex flex-col space-y-4 text-sm font-semibold">
+          <a href="index.html" class="text-white hover:text-accent transition-colors">Home</a>
+          <a href="about.html" class="text-white hover:text-accent transition-colors">About Us</a>
+          <a href="courses.html" class="text-white hover:text-accent transition-colors">Our Courses</a>
+          <a href="exam-prep.html" class="text-white hover:text-accent transition-colors">Exam Preparation</a>
+          <a href="contact.html" class="text-white hover:text-accent transition-colors">Contact Us</a>
+        </nav>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left text-xs text-white/30 uppercase tracking-widest">
+      <p>&copy; 2024 Eben Math and Science Academy (Hepa Plus). All rights reserved.</p>
+      <p class="mt-4 md:mt-0">Maths Made Simple</p>
+    </div>
+  </footer>
+  
+  <!-- GSAP Animation Initialization -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      gsap.registerPlugin(ScrollTrigger);
+      
+      const menuTl = gsap.timeline({ paused: true, reversed: true });
+      menuTl.to('#mobile-menu', {
+        display: 'flex',
+        clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+        duration: 0.8,
+        ease: 'power4.inOut'
+      }).fromTo('.mobile-link', {
+        y: 30,
+        opacity: 0
+      }, {
+        y: 0,
+        opacity: 1,
+        stagger: 0.1,
+        duration: 0.5,
+        ease: 'power3.out'
+      }, '-=0.4');
+      
+      const btn = document.getElementById('mobile-menu-btn');
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const closeIcon = document.getElementById('close-icon');
+      
+      btn.addEventListener('click', () => {
+        if (menuTl.reversed()) {
+          menuTl.play();
+          hamburgerIcon.classList.add('hidden');
+          closeIcon.classList.remove('hidden');
+        } else {
+          menuTl.reverse();
+          hamburgerIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        }
+      });
+      
+      gsap.from('.animate-fade-in-up > *', {
+        y: 50,
+        opacity: 0,
+        stagger: 0.15,
+        duration: 1,
+        ease: 'power3.out',
+        delay: 0.2
+      });
+      
+      gsap.utils.toArray('.fade-section').forEach(section => {
+        gsap.from(section, {
+          scrollTrigger: { trigger: section, start: 'top 85%' },
+          y: 40,
+          opacity: 0,
+          duration: 0.8,
+          ease: 'power3.out'
+        });
+      });
+      
+      gsap.from('footer > div', {
+        scrollTrigger: { trigger: 'footer', start: 'top 90%' },
+        y: 30,
+        opacity: 0,
+        stagger: 0.2,
+        duration: 0.8,
+        ease: 'power3.out'
+      });
+    });
+  </script>
+</body>
+</html>

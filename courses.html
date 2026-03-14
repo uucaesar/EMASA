@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Math & Science Courses in South Africa | Eben Math & Science Academy</title>
+    <meta name="description" content="Discover comprehensive mathematics and pure science tutoring courses for Basic 4-6, JHS, and SHS levels in South Africa at Eben Math and Science Academy.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Math & Science Courses in South Africa | Eben Math & Science Academy">
+    <meta property="og:description" content="Discover comprehensive mathematics and pure science tutoring courses for Basic 4-6, JHS, and SHS levels in South Africa at Eben Math and Science Academy.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ebenmathandscience.co.za/courses.html">
+    <meta property="og:image" content="https://www.ebenmathandscience.co.za/images/og-image.jpg">
+    
+    <!-- Local SEO Schema for South Africa -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "TutoringService",
+            "@id": "https://www.ebenmathandscience.co.za/#organization",
+            "name": "Eben Math and Science Academy",
+            "description": "Elite math and pure science tutoring for Basic 4-6, JHS, and SHS students in South Africa.",
+            "url": "https://www.ebenmathandscience.co.za/",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "South Africa",
+              "addressCountry": "ZA"
+            },
+            "areaServed": "ZA"
+          },
+          {
+            "@type": "Course",
+            "name": "Foundational Primary Level Math & Science",
+            "description": "Core arithmetic and introductory scientific principles for Basic 4-6 students.",
+            "provider": {
+              "@id": "https://www.ebenmathandscience.co.za/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Junior High School Core Pillars",
+            "description": "Pre-Calculus, Abstract Algebra, and Integrated Pure Sciences for JHS students.",
+            "provider": {
+              "@id": "https://www.ebenmathandscience.co.za/#organization"
+            }
+          },
+          {
+            "@type": "Course",
+            "name": "Advanced SHS Studies",
+            "description": "Advanced Calculus, Simultaneous Equations, and Pure Physics & Chemistry for SHS students.",
+            "provider": {
+              "@id": "https://www.ebenmathandscience.co.za/#organization"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- Custom Styles -->
+    <style>
+      .text-accent {
+        color: #8AA4C8;
+      }
+      .hover\:text-accent:hover {
+        color: #8AA4C8;
+      }
+    </style>
+    
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  </head>
+  <body class="bg-[#F8FAFC] text-[#0C102A] font-sans antialiased selection:bg-[#3A5683] selection:text-white overflow-x-hidden">
+    
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full z-50 px-6 md:px-12 py-4 md:py-6 flex justify-between items-center mix-blend-difference">
+      <div class="text-white font-extrabold text-xl md:text-2xl tracking-tighter uppercase relative z-50">
+        HEPA PLUS<span class="text-[#8AA4C8]">.</span>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8 text-sm font-semibold">
+        <a href="index.html" class="text-white hover:text-accent transition-colors">Home</a>
+        <a href="about.html" class="text-white hover:text-accent transition-colors">About Us</a>
+        <a href="courses.html" class="text-white hover:text-accent transition-colors">Our Courses</a>
+        <a href="exam-prep.html" class="text-white hover:text-accent transition-colors">Exam Preparation</a>
+        <a href="contact.html" class="text-white hover:text-accent transition-colors">Contact Us</a>
+      </nav>
+      
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="block md:hidden text-white focus:outline-none z-50 transition-transform" aria-label="Toggle mobile menu">
+        <svg id="hamburger-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg id="close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </header>
+    
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-[#0C102A] z-40 flex-col items-center justify-center space-y-8 text-lg font-bold uppercase tracking-widest" style="display:none; clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);">
+      <a href="index.html" class="mobile-link text-white hover:text-accent transition-colors">Home</a>
+      <a href="about.html" class="mobile-link text-white hover:text-accent transition-colors">About Us</a>
+      <a href="courses.html" class="mobile-link text-white hover:text-accent transition-colors">Our Courses</a>
+      <a href="exam-prep.html" class="mobile-link text-white hover:text-accent transition-colors">Exam Preparation</a>
+      <a href="contact.html" class="mobile-link text-white hover:text-accent transition-colors">Contact Us</a>
+    </div>
+    
+    <!-- Main Content -->
+    <main>
+      
+      <!-- Section 1: Minimized Page Header -->
+      <section class="pt-32 md:pt-48 pb-16 md:pb-24 bg-[#0C102A] px-6 md:px-12 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <div class="absolute top-[-50%] right-[-10%] w-[60vw] h-[60vw] bg-[#3A5683]/20 rounded-full blur-[100px]"></div>
+        </div>
+        <div class="max-w-7xl mx-auto relative z-10 animate-fade-in-up">
+          <!-- Breadcrumb -->
+          <div class="text-[#8AA4C8] text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-6 md:mb-8">
+            <a href="index.html" class="hover:text-white transition-colors">Home</a> <span class="mx-3 opacity-50">/</span> <span class="text-white">Our Courses</span>
+          </div>
+          <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-white uppercase mb-6 md:mb-8 leading-[0.9]">
+            Academic <br><span class="font-light text-[#8AA4C8]">Syllabi</span>
+          </h1>
+          <p class="text-[#8AA4C8] text-sm md:text-lg max-w-2xl font-light leading-relaxed">
+            Comprehensive mathematics and science tutoring architected to dismantle anxiety and build unshakable logical foundations across all academic tiers.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 2: Primary Level (Basic 4-6) -->
+      <section class="py-20 md:py-32 bg-white px-6 md:px-12 border-b border-[#0C102A]/5 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+          <div class="lg:col-span-5 order-2 lg:order-1 slide-up-el">
+            <div class="text-[6rem] md:text-[10rem] font-black text-[#0C102A]/5 leading-none mb-2 md:mb-4 -ml-2 tracking-tighter">01</div>
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tighter text-[#0C102A] uppercase mb-4 md:mb-6">
+              Foundational <br><span class="font-light text-[#3A5683]">Primary Level</span>
+            </h2>
+            <div class="inline-block px-3 py-1 bg-[#F8FAFC] border border-[#0C102A]/10 text-[10px] font-bold uppercase tracking-widest text-[#3A5683] mb-6 md:mb-8">
+              Basic 4 — 6
+            </div>
+            <p class="text-[#3A5683] text-sm md:text-base leading-relaxed mb-8 font-light max-w-lg">
+              The formative years are critical. We focus entirely on establishing core arithmetic and introductory scientific principles. By replacing rote memorization with intuitive numerical processing, we inoculate students against future math anxiety early in their academic journey.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4 text-[#0C102A] text-sm font-semibold">
+                <div class="w-1.5 h-1.5 bg-[#3A5683] mt-1.5 rounded-full flex-shrink-0"></div>
+                <span>Intuitive Arithmetic & Number Sense</span>
+              </li>
+              <li class="flex items-start gap-4 text-[#0C102A] text-sm font-semibold">
+                <div class="w-1.5 h-1.5 bg-[#3A5683] mt-1.5 rounded-full flex-shrink-0"></div>
+                <span>Introductory Natural Sciences</span>
+              </li>
+            </ul>
+          </div>
+          <div class="lg:col-span-7 order-1 lg:order-2 bg-[#F8FAFC] p-8 md:p-16 aspect-square md:aspect-[4/3] flex items-center justify-center relative border border-[#0C102A]/5 group slide-up-el">
+            <div class="absolute inset-0 bg-[#3A5683]/5 group-hover:bg-[#3A5683]/10 transition-colors duration-700"></div>
+            <!-- Abstract Monochromatic Visual -->
+            <div class="relative z-10 grid grid-cols-3 gap-2 md:gap-4 w-full max-w-[200px] md:max-w-xs">
+              <div class="aspect-square bg-[#0C102A] opacity-10 group-hover:opacity-100 transition-opacity duration-500 delay-100"></div>
+              <div class="aspect-square bg-[#3A5683] opacity-20 group-hover:opacity-100 transition-opacity duration-500 delay-200"></div>
+              <div class="aspect-square bg-[#8AA4C8] opacity-30 group-hover:opacity-100 transition-opacity duration-500 delay-300"></div>
+              <div class="aspect-square bg-[#8AA4C8] opacity-10 group-hover:opacity-80 transition-opacity duration-500 delay-400"></div>
+              <div class="aspect-square bg-[#0C102A] opacity-5 group-hover:opacity-90 transition-opacity duration-500 delay-500"></div>
+              <div class="aspect-square bg-[#3A5683] opacity-15 group-hover:opacity-70 transition-opacity duration-500 delay-600"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Junior High School (JHS) -->
+      <section class="py-20 md:py-32 bg-[#F8FAFC] px-6 md:px-12 border-b border-[#0C102A]/5 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+          <div class="lg:col-span-7 bg-white p-8 md:p-16 aspect-square md:aspect-[4/3] flex items-center justify-center relative border border-[#0C102A]/5 group slide-up-el">
+            <div class="absolute inset-0 bg-[#8AA4C8]/5 group-hover:bg-[#8AA4C8]/10 transition-colors duration-700"></div>
+            <div class="relative z-10 text-center">
+              <div class="text-3xl md:text-5xl lg:text-6xl font-light text-[#3A5683] mb-6 tracking-tighter">
+                <span class="font-extrabold text-[#0C102A]">A</span> = π<span class="font-extrabold text-[#0C102A]">r²</span>
+              </div>
+              <div class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8] border-t border-[#8AA4C8]/30 pt-4 inline-block">
+                Bridging Geometric Abstraction
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-5 slide-up-el">
+            <div class="text-[6rem] md:text-[10rem] font-black text-[#0C102A]/5 leading-none mb-2 md:mb-4 -ml-2 tracking-tighter">02</div>
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tighter text-[#0C102A] uppercase mb-4 md:mb-6">
+              Core Pillars <br><span class="font-light text-[#3A5683]">Junior High</span>
+            </h2>
+            <div class="inline-block px-3 py-1 bg-white border border-[#0C102A]/10 text-[10px] font-bold uppercase tracking-widest text-[#3A5683] mb-6 md:mb-8">
+              JHS Curriculum
+            </div>
+            <p class="text-[#3A5683] text-sm md:text-base leading-relaxed mb-8 font-light max-w-lg">
+              Transitioning from basic arithmetic to abstract logic. The JHS curriculum is engineered to build structural comprehension in algebra, geometry, and core scientific principles, ensuring students are perfectly calibrated for the impending rigor of secondary school.
+            </p>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-4 text-[#0C102A] text-sm font-semibold">
+                <div class="w-1.5 h-1.5 bg-[#3A5683] mt-1.5 rounded-full flex-shrink-0"></div>
+                <span>Pre-Calculus & Abstract Algebra</span>
+              </li>
+              <li class="flex items-start gap-4 text-[#0C102A] text-sm font-semibold">
+                <div class="w-1.5 h-1.5 bg-[#3A5683] mt-1.5 rounded-full flex-shrink-0"></div>
+                <span>Integrated Pure Sciences</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 4: Senior High School (SHS) -->
+      <section class="py-20 md:py-32 bg-[#3A5683] px-6 md:px-12 text-white">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16 md:mb-24 gap-8 slide-up-el">
+            <div class="max-w-2xl">
+              <div class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-4 md:mb-6">
+                03 — Mastery Tier
+              </div>
+              <h2 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter uppercase mb-6 text-white leading-[0.9]">
+                Advanced <br><span class="font-light text-[#8AA4C8]">SHS Studies</span>
+              </h2>
+              <p class="text-[#8AA4C8] text-sm md:text-base font-light leading-relaxed">
+                Our capstone tutoring tier. We deconstruct highly complex mathematical theorems and scientific laws into digestible, logical sequences. Designed strictly for South African exam excellence and top-tier university placement.
+              </p>
+            </div>
+            <a href="exam-prep.html" class="inline-flex items-center justify-center gap-4 bg-[#0C102A] text-white px-8 md:px-10 py-4 md:py-5 rounded-none font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] hover:bg-white hover:text-[#0C102A] transition-colors duration-500 whitespace-nowrap text-xs md:text-sm">
+              Explore Exam Prep
+            </a>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-[#0C102A]/40 border border-white/5 p-8 md:p-12 hover:bg-[#0C102A]/80 transition-colors duration-500 slide-up-el">
+              <div class="text-3xl font-light text-[#8AA4C8] mb-6">∫ dx</div>
+              <h3 class="text-lg md:text-xl font-bold mb-4 uppercase tracking-wider">Advanced Calculus</h3>
+              <p class="text-[#8AA4C8] text-xs md:text-sm leading-relaxed font-light">Mastering limits, derivatives, and integrals. We strip away the intimidation, focusing purely on the mechanics of change and accumulation.</p>
+            </div>
+            <div class="bg-[#0C102A]/40 border border-white/5 p-8 md:p-12 hover:bg-[#0C102A]/80 transition-colors duration-500 slide-up-el delay-100">
+              <div class="text-3xl font-light text-[#8AA4C8] mb-6">{ x, y }</div>
+              <h3 class="text-lg md:text-xl font-bold mb-4 uppercase tracking-wider">Simultaneous Equations</h3>
+              <p class="text-[#8AA4C8] text-xs md:text-sm leading-relaxed font-light">Strategic resolution of multi-variable problems utilizing substitution, elimination, and advanced matrix methodologies.</p>
+            </div>
+            <div class="bg-[#0C102A]/40 border border-white/5 p-8 md:p-12 hover:bg-[#0C102A]/80 transition-colors duration-500 slide-up-el delay-200">
+              <div class="text-3xl font-light text-[#8AA4C8] mb-6">E=mc²</div>
+              <h3 class="text-lg md:text-xl font-bold mb-4 uppercase tracking-wider">Pure Physics & Chemistry</h3>
+              <p class="text-[#8AA4C8] text-xs md:text-sm leading-relaxed font-light">Translating theoretical physics and complex chemical equations into observable, understandable, and highly logical frameworks.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5: Real-World Application -->
+      <section class="py-20 md:py-32 bg-[#0C102A] px-6 md:px-12 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+          <div class="absolute bottom-[-30%] left-[-10%] w-[70vw] h-[70vw] bg-[#3A5683]/10 rounded-full blur-[120px]"></div>
+        </div>
+        <div class="max-w-7xl mx-auto relative z-10">
+          <div class="text-center mb-16 md:mb-24 slide-up-el">
+            <div class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-4 md:mb-6">
+              Pedagogical Framework
+            </div>
+            <h2 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light tracking-tighter text-white mb-6 md:mb-8 max-w-5xl mx-auto leading-[1.1]">
+              Connecting pure logic to <br><span class="font-extrabold">real-world architecture.</span>
+            </h2>
+            <p class="text-[#8AA4C8] text-sm md:text-base max-w-2xl mx-auto font-light leading-relaxed">
+              Math is not confined to the classroom. Our framework explicitly maps theoretical concepts to everyday scenarios—ensuring students grasp the 'why' alongside the 'how'.
+            </p>
+          </div>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+            <!-- Monochromatic stretched base hues via opacity -->
+            <div class="bg-white/5 border border-white/10 p-8 text-left hover:bg-white/10 transition-colors duration-300 slide-up-el">
+              <div class="text-xl md:text-2xl mb-6 font-light text-[#8AA4C8]">01</div>
+              <h4 class="text-white font-bold uppercase text-xs md:text-sm tracking-wider mb-3">Unit Economics</h4>
+              <p class="text-white/50 text-xs leading-relaxed font-light">Applying algebraic logic to calculate unit costs and optimize daily financial decisions.</p>
+            </div>
+            <div class="bg-[#3A5683]/20 border border-white/10 p-8 text-left hover:bg-[#3A5683]/40 transition-colors duration-300 slide-up-el delay-100">
+              <div class="text-xl md:text-2xl mb-6 font-light text-[#8AA4C8]">02</div>
+              <h4 class="text-white font-bold uppercase text-xs md:text-sm tracking-wider mb-3">Spatial Geometry</h4>
+              <p class="text-white/50 text-xs leading-relaxed font-light">Understanding physical volume, area, and structural integrity in real-world engineering.</p>
+            </div>
+            <div class="bg-[#8AA4C8]/10 border border-white/10 p-8 text-left hover:bg-[#8AA4C8]/20 transition-colors duration-300 slide-up-el delay-200">
+              <div class="text-xl md:text-2xl mb-6 font-light text-[#8AA4C8]">03</div>
+              <h4 class="text-white font-bold uppercase text-xs md:text-sm tracking-wider mb-3">Statistical Logic</h4>
+              <p class="text-white/50 text-xs leading-relaxed font-light">Parsing massive data sets and calculating probability algorithms in modern media environments.</p>
+            </div>
+            <div class="bg-white/5 border border-white/10 p-8 text-left hover:bg-white/10 transition-colors duration-300 slide-up-el delay-300">
+              <div class="text-xl md:text-2xl mb-6 font-light text-[#8AA4C8]">04</div>
+              <h4 class="text-white font-bold uppercase text-xs md:text-sm tracking-wider mb-3">Chemical Ratios</h4>
+              <p class="text-white/50 text-xs leading-relaxed font-light">Decoding the strict science behind precise proportions in culinary and industrial arts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section py-20 md:py-32 px-6 md:px-12 bg-[#3A5683] text-center flex flex-col items-center justify-center">
+        <h2 class="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tighter text-white max-w-4xl mb-6 md:mb-8">
+          Ready to architect your child's academic success?
+        </h2>
+        <p class="text-[#8AA4C8] text-base md:text-lg max-w-2xl mb-10 md:mb-12 font-light px-4">
+          Enroll today and watch the transformation from systemic fear to genuine mathematical mastery.
+        </p>
+        <a href="contact.html" class="bg-[#0C102A] text-white px-8 md:px-12 py-4 md:py-5 rounded-none font-bold text-sm md:text-base uppercase tracking-widest hover:bg-white hover:text-[#0C102A] transition-colors duration-300">
+          Contact Guardianship
+        </a>
+      </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-[#0C102A] text-white pt-16 md:pt-24 pb-10 md:pb-12 px-6 md:px-12">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 border-b border-white/10 pb-12 md:pb-16">
+        <div class="max-w-sm">
+          <div class="text-white font-extrabold text-2xl md:text-3xl tracking-tighter uppercase mb-4 md:mb-6">
+            HEPA PLUS<span class="text-[#8AA4C8]">.</span>
+          </div>
+          <p class="text-white/50 text-sm leading-relaxed">
+            An elite academic institution dedicated to demystifying mathematics and pure sciences for Basic, JHS, and SHS levels.
+          </p>
+        </div>
+        
+        <div class="w-full md:w-auto">
+          <h4 class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-6">Directory</h4>
+          <nav class="flex flex-col space-y-4 text-sm font-semibold">
+            <a href="index.html" class="text-white hover:text-accent transition-colors">Home</a>
+            <a href="about.html" class="text-white hover:text-accent transition-colors">About Us</a>
+            <a href="courses.html" class="text-white hover:text-accent transition-colors">Our Courses</a>
+            <a href="exam-prep.html" class="text-white hover:text-accent transition-colors">Exam Preparation</a>
+            <a href="contact.html" class="text-white hover:text-accent transition-colors">Contact Us</a>
+          </nav>
+        </div>
+      </div>
+      
+      <div class="max-w-7xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left text-[10px] md:text-xs text-white/30 uppercase tracking-widest">
+        <p>&copy; 2024 Eben Math and Science Academy (Hepa Plus). All rights reserved.</p>
+        <p class="mt-4 md:mt-0">Maths Made Simple</p>
+      </div>
+    </footer>
+    
+    <!-- Animation Scripts -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        gsap.registerPlugin(ScrollTrigger);
+        
+        // Mobile Menu Setup
+        const menuTl = gsap.timeline({ paused: true, reversed: true });
+        menuTl.to('#mobile-menu', {
+          display: 'flex',
+          clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+          duration: 0.8,
+          ease: 'power4.inOut'
+        }).fromTo('.mobile-link', {
+          y: 30,
+          opacity: 0
+        }, {
+          y: 0,
+          opacity: 1,
+          stagger: 0.1,
+          duration: 0.5,
+          ease: 'power3.out'
+        }, '-=0.4');
+        
+        const btn = document.getElementById('mobile-menu-btn');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+        const closeIcon = document.getElementById('close-icon');
+        
+        btn.addEventListener('click', () => {
+          if (menuTl.reversed()) {
+            menuTl.play();
+            hamburgerIcon.classList.add('hidden');
+            closeIcon.classList.remove('hidden');
+          } else {
+            menuTl.reverse();
+            hamburgerIcon.classList.remove('hidden');
+            closeIcon.classList.add('hidden');
+          }
+        });
+
+        // Page Header Animation
+        gsap.from('.animate-fade-in-up > *', {
+          y: 40,
+          opacity: 0,
+          stagger: 0.15,
+          duration: 1,
+          ease: 'power3.out',
+          delay: 0.2
+        });
+
+        // Scroll Animations for Subpage Sections
+        gsap.utils.toArray('.slide-up-el').forEach(el => {
+          gsap.from(el, {
+            scrollTrigger: {
+              trigger: el,
+              start: 'top 85%',
+            },
+            y: 50,
+            opacity: 0,
+            duration: 0.8,
+            ease: 'power3.out'
+          });
+        });
+        
+        // CTA Animation
+        gsap.from('.cta-section > *', {
+          scrollTrigger: { trigger: '.cta-section', start: 'top 80%' },
+          y: 40,
+          opacity: 0,
+          stagger: 0.15,
+          duration: 0.8,
+          ease: 'power3.out'
+        });
+        
+        // Footer Animation
+        gsap.from('footer > div', {
+          scrollTrigger: { trigger: 'footer', start: 'top 90%' },
+          y: 30,
+          opacity: 0,
+          stagger: 0.2,
+          duration: 0.8,
+          ease: 'power3.out'
+        });
+      });
+    </script>
+  </body>
+</html>
