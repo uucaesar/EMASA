@@ -3,22 +3,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- Optimized SEO Meta Tags -->
-  <title>Contact EMASA | Eben Math &amp; Science Academy Tutoring</title>
+  <title>Contact EMASA | Eben Maths &amp; Science Academy Tutoring</title>
   <meta name="description" content="Ready to transform your marks? Contact EMASA for Grade 8-12 and Matric Rewrite STEM tutoring. Reach out via WhatsApp, email, or our assessment form.">
   
   <!-- Open Graph Tags -->
   <meta property="og:title" content="Contact EMASA | Ready to Transform Your Marks?">
   <meta property="og:description" content="Whether you are looking for a distinction or a Matric Rewrite, the EMASA team is here to help. Get in touch today.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.emasa.co.za/contact">
-  <meta property="og:image" content="https://www.emasa.co.za/assets/og-image.jpg">
+  <meta property="og:url" content="https://www.ebenmathandscience.co.za/contact">
+  <meta property="og:image" content="https://www.ebenmathandscience.co.za/assets/images/og-image.jpg">
   
   <!-- LocalBusiness Schema (South Africa - ZA) -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
-      "name": "EMASA (Eben Math and Science Academy)",
+      "name": "Eben Maths and Science Academy",
+      "alternateName": "EMASA",
       "description": "Specialist STEM tutoring for Grade 8-12 and Matric Rewrite students in South Africa.",
       "telephone": "+27-74-826-3936",
       "email": "info@emasa.co.za",
@@ -29,7 +30,7 @@
         "postalCode": "1200",
         "addressCountry": "ZA"
       },
-      "url": "https://www.emasa.co.za"
+      "url": "https://www.ebenmathandscience.co.za"
     }
   </script>
 
@@ -45,17 +46,33 @@
       theme: {
         extend: {
           fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            sans:['"Plus Jakarta Sans"', 'sans-serif'],
           }
         }
       }
     }
   </script>
   
-  <!-- Custom Styles -->
+  <!-- Custom Styles (Matching Design System) -->
   <style>
     .text-accent { color: #8AA4C8; }
     .hover\:text-accent:hover { color: #8AA4C8; }
+    
+    .workbook-grid {
+      background-image: linear-gradient(to right, rgba(58, 86, 131, 0.07) 1px, transparent 1px), linear-gradient(to bottom, rgba(58, 86, 131, 0.07) 1px, transparent 1px);
+      background-size: 25px 25px;
+    }
+    .workbook-grid-dark {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
+    .workbook-margin { border-left: 2px solid rgba(239, 68, 68, 0.2); }
+    .math-corner {
+      background-image: radial-gradient(circle at 1px 1px, rgba(58, 86, 131, 0.1) 1px, transparent 0);
+      background-size: 20px 20px;
+    }
+
+    /* Form Specific Overrides */
     input:focus, textarea:focus, select:focus {
       outline: none !important;
       box-shadow: none !important;
@@ -67,292 +84,349 @@
       background-size: 1.5em 1.5em;
       padding-right: 2.5rem;
     }
-    /* Custom checkbox styling to match theme */
     .custom-checkbox {
       accent-color: #0C102A;
     }
   </style>
   
-  <!-- GSAP Animation Library -->
+  <!-- GSAP Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 </head>
 <body class="bg-[#F8FAFC] text-[#0C102A] font-sans antialiased selection:bg-[#3A5683] selection:text-white overflow-x-hidden">
   
-  <!-- Header / Navigation -->
-  <header class="fixed top-0 left-0 w-full z-50 px-6 md:px-12 py-4 md:py-6 flex justify-between items-center mix-blend-difference" id="gama-mmpxbmyq-0">
-    <div class="text-white font-extrabold text-xl md:text-2xl tracking-tighter uppercase relative z-50" id="gama-mmpxbmyq-1">
-      EMASA<span class="text-[#8AA4C8]" id="gama-mmpxbmyq-2">.</span>
+  <!-- Header -->
+  <header class="sticky top-0 w-full z-[100] px-6 md:px-12 py-3 md:py-4 flex justify-between items-center bg-[#0C102A] backdrop-blur-md border-b border-white/10 shadow-sm workbook-grid" id="main-header">
+    <div class="relative z-50" id="gama-mncxse0x-0">
+      <a href="index.html" class="flex items-center" id="gama-mncxse0x-1">
+        <img src="https://res.cloudinary.com/db7ddka03/image/upload/v1774530176/Emasa_Main_Logo_zjm58l.png" alt="Eben Maths and Science Academy Logo" class="h-16 md:h-20 w-auto" style="filter: brightness(0) invert(1);" id="gama-mncxse0x-2">
+      </a>
     </div>
-    
-    <nav class="hidden md:flex space-x-8 text-sm font-semibold" id="gama-mmpxbmyq-3">
-      <a href="index.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxbmyq-4">Home</a>
-      <a href="about.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxbmyq-5">About Us</a>
-      <a href="subjects.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxbmyq-6">Our Subjects</a>
-      <a href="contact.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxbmyq-8">Contact Us</a>
+    <nav class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-wider" id="desktop-nav">
+      <a href="index.html" class="text-white hover:text-gray-300 transition-colors" id="gama-mncxse0x-3">Home</a>
+      <a href="about.html" class="text-white hover:text-gray-300 transition-colors" id="gama-mncxse0x-4">About Us</a>
+      <a href="subjects.html" class="text-white hover:text-gray-300 transition-colors" id="gama-mncxse0x-5">Our Subjects</a>
+      <a href="contact.html" class="text-white hover:text-gray-300 transition-colors" id="gama-mncxse0x-6">Contact Us</a>
     </nav>
-    
     <button id="mobile-menu-btn" class="block md:hidden text-white focus:outline-none z-50 transition-transform" aria-label="Toggle mobile menu">
-      <svg id="hamburger-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" id="gama-mmpxbmyq-9"></path>
+      <svg id="hamburger-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" id="gama-mncxse0x-7"></path>
       </svg>
-      <svg id="close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" id="gama-mmpxbmyq-10"></path>
+      <svg id="close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" id="gama-mncxse0x-8"></path>
       </svg>
     </button>
   </header>
   
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="fixed inset-0 bg-[#0C102A] z-40 flex-col items-center justify-center space-y-8 text-lg font-bold uppercase tracking-widest" style="display:none; clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);">
-    <a href="index.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mmpxbmyq-11">Home</a>
-    <a href="about.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mmpxbmyq-12">About Us</a>
-    <a href="subjects.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mmpxbmyq-13">Our Subjects</a>
-    <a href="contact.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mmpxbmyq-15">Contact Us</a>
+  <div id="mobile-menu" class="fixed inset-0 bg-[#0C102A] z-[90] flex-col items-center justify-center space-y-8 text-lg font-bold uppercase tracking-widest" style="display:none; clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);">
+    <a href="index.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mncxse0x-9">Home</a>
+    <a href="about.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mncxse0x-10">About Us</a>
+    <a href="subjects.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mncxse0x-11">Our Subjects</a>
+    <a href="contact.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mncxse0x-12">Contact Us</a>
   </div>
   
-  <main id="gama-mmpxbmyq-16">
+  <main id="main-content">
+    
     <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 md:px-12 bg-[#0C102A] text-white overflow-hidden" id="gama-mmpxbmyq-17">
-      <div class="absolute inset-0 z-0" id="gama-mmpxbmyq-18">
-        <div class="absolute top-[-50%] right-[-10%] w-[100vw] h-[100vw] bg-[#3A5683]/10 rounded-full blur-[100px]" id="gama-mmpxbmyq-19"></div>
-      </div>
-      <div class="max-w-7xl mx-auto relative z-10 animate-fade-in-up" id="gama-mmpxbmyq-20">
-        <div class="flex items-center gap-3 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase text-[#8AA4C8] mb-8" id="gama-mmpxbmyq-21">
-          <a href="index.html" class="hover:text-white transition-colors" id="gama-mmpxbmyq-22">Home</a>
-          <span class="text-[#3A5683]" id="gama-mmpxbmyq-23">/</span>
-          <span class="text-white" id="gama-mmpxbmyq-24">Contact Us</span>
-        </div>
-        <h1 class="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter uppercase mb-6 leading-none text-white/90" id="gama-mmpxbmyq-25">
-          Let's <br id="gama-mmpxbmyq-26">
-          <span class="font-light text-white/50" id="gama-mmpxbmyq-27">Talk.</span>
-        </h1>
-        <p class="text-lg md:text-2xl font-light text-[#8AA4C8] max-w-2xl leading-relaxed mt-8" id="gama-mmpxbmyq-28">
-          Ready to Transform Your Marks? Whether you are looking to build a stronger foundation, secure a distinction, or enrol in our Matric Rewrite programme, the EMASA team is here to help.
-        </p>
+    <section class="pt-12 pb-20 md:pt-20 md:pb-32 px-6 md:px-12 bg-[#0C102A] text-white relative overflow-hidden workbook-grid-dark" id="gama-mncxse0x-13">
+      <div class="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row gap-12 items-center" id="gama-mncxse0x-14">
+         <div class="w-full md:w-4/5 workbook-margin pl-6 md:pl-10" id="gama-mncxse0x-15">
+            <nav aria-label="Breadcrumb" class="hero-text flex items-center space-x-2 text-[#8AA4C8] text-xs font-bold uppercase tracking-widest mb-6" id="gama-mncxse0x-16">
+              <a href="index.html" class="hover:text-white transition-colors" id="gama-mncxse0x-17">Home</a>
+              <span aria-hidden="true" id="gama-mncxse0x-18">/</span>
+              <span class="text-white" id="gama-mncxse0x-19">Contact Us</span>
+            </nav>
+            <h1 class="hero-text text-5xl md:text-7xl lg:text-[7vw] font-extrabold tracking-tighter uppercase mb-2 leading-[0.9]" id="gama-mncxse0x-20">
+              Let's
+            </h1>
+            <h2 class="hero-text text-4xl md:text-6xl lg:text-[6vw] text-[#3A5683] font-light tracking-tighter uppercase mb-8 leading-[0.9]" id="gama-mncxse0x-21">
+              Talk.
+            </h2>
+            <p class="hero-text text-[#8AA4C8] text-lg md:text-xl max-w-2xl font-light leading-relaxed" id="gama-mncxse0x-22">
+              Ready to Transform Your Marks? Whether you are looking to build a stronger foundation, secure a distinction, or enrol in our Matric Rewrite programme, the EMASA team is here to help.
+            </p>
+         </div>
       </div>
     </section>
     
     <!-- Get In Touch Section -->
-    <section class="py-20 md:py-32 px-6 md:px-12 bg-[#F8FAFC]" id="gama-mmpxbmyq-29">
-      <div class="max-w-7xl mx-auto" id="gama-mmpxbmyq-30">
-        <div class="mb-16 md:mb-24 fade-section" id="gama-mmpxbmyq-31">
-          <h2 class="text-xs md:text-sm font-extrabold uppercase tracking-widest text-[#3A5683] mb-4" id="gama-mmpxbmyq-32">Get In Touch</h2>
-          <p class="text-3xl sm:text-4xl md:text-6xl font-light tracking-tight text-[#0C102A] max-w-3xl leading-tight" id="gama-mmpxbmyq-33">
-            Have a question about our timetable or fees? Reach out directly.
-          </p>
+    <section class="py-20 md:py-32 px-6 md:px-12 bg-[#F8FAFC] workbook-grid" id="gama-mncxse0x-23">
+      <div class="max-w-7xl mx-auto" id="gama-mncxse0x-24">
+        <div class="mb-16 md:mb-24 hepa-text" id="gama-mncxse0x-25">
+          <h2 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-[#0C102A] tracking-tighter uppercase mb-2" id="gama-mncxse0x-26">Get In Touch</h2>
+          <h3 class="text-xl sm:text-2xl md:text-3xl text-[#3A5683] font-light tracking-tight mb-6" id="gama-mncxse0x-27">Have a question about our timetable or fees? Reach out directly.</h3>
+          <div class="w-12 h-1 bg-[#3A5683]" id="gama-mncxse0x-28"></div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8" id="gama-mmpxbmyq-34">
-          <div class="fade-section border border-[#0C102A]/10 p-8 hover:bg-[#3A5683]/5 transition-colors duration-500 bg-white" id="gama-mmpxbmyq-35">
-            <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#8AA4C8] mb-4" id="gama-mmpxbmyq-36">Phone &amp; WhatsApp</p>
-            <p class="text-xl font-bold text-[#0C102A] mb-2" id="gama-mmpxbmyq-37">074 826 3936</p>
-            <p class="text-xs text-[#3A5683] italic" id="gama-mmpxbmyq-38">WhatsApp highly recommended!</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8" id="gama-mncxse0x-29">
+          <div class="stat-item bg-white p-8 border border-[#0C102A]/10 hover:shadow-xl transition-all relative overflow-hidden math-corner" id="gama-mncxse0x-30">
+            <div class="w-12 h-12 bg-[#3A5683]/10 text-[#3A5683] flex items-center justify-center mb-6" id="gama-mncxse0x-31">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="gama-mncxse0x-32">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" id="gama-mncxse0x-33"></path>
+              </svg>
+            </div>
+            <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#8AA4C8] mb-4" id="gama-mncxse0x-34">Phone &amp; WhatsApp</p>
+            <p class="text-xl font-bold text-[#0C102A] mb-2" id="gama-mncxse0x-35">074 826 3936</p>
+            <p class="text-xs text-[#3A5683] italic" id="gama-mncxse0x-36">WhatsApp highly recommended!</p>
           </div>
           
-          <div class="fade-section border border-[#0C102A]/10 p-8 hover:bg-[#3A5683]/5 transition-colors duration-500 bg-white" id="gama-mmpxbmyq-42">
-            <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#8AA4C8] mb-4" id="gama-mmpxbmyq-43">Location</p>
-            <p class="text-sm font-bold text-[#0C102A] leading-relaxed" id="gama-mmpxbmyq-44">
-              Floor, Office 126, Caltex Building First, 32 Bell St, Mbombela Central, Mbombela, 1200<br id="gama-mmpxfi1d-0">
-              <span class="text-[#3A5683] font-normal italic" id="gama-mmpxfi1d-1"></span>
+          <div class="stat-item bg-white p-8 border border-[#0C102A]/10 hover:shadow-xl transition-all relative overflow-hidden math-corner" id="gama-mncxse0x-37">
+            <div class="w-12 h-12 bg-[#3A5683]/10 text-[#3A5683] flex items-center justify-center mb-6" id="gama-mncxse0x-38">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="gama-mncxse0x-39">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" id="gama-mncxse0x-40"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" id="gama-mncxse0x-41"></path>
+              </svg>
+            </div>
+            <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#8AA4C8] mb-4" id="gama-mncxse0x-42">Location</p>
+            <p class="text-sm font-bold text-[#0C102A] leading-relaxed" id="gama-mncxse0x-43">
+              Floor, Office 126, Caltex Building First,<br id="gama-mncxse0x-44"> 32 Bell St, Mbombela Central, Mbombela, 1200
             </p>
           </div>
-          <div class="fade-section border border-[#0C102A]/10 p-8 hover:bg-[#3A5683]/5 transition-colors duration-500 bg-white" id="gama-mmpxbmyq-45">
-            <p class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#8AA4C8] mb-4" id="gama-mmpxbmyq-46">Office Hours</p>
-            <p class="text-sm text-[#0C102A] leading-relaxed" id="gama-mmpxbmyq-47">
-              <span class="font-bold" id="gama-mmpxbmyq-48">Mon – Fri:</span> 08:00 – 17:00<br id="gama-mmpxbmyq-49">
-              <span class="font-bold" id="gama-mmpxbmyq-50">Sat:</span> 08:00 – 13:00
-            </p>
-          </div>
+          
+          <div class="stat-item bg-white p-8 border border-[#0C102A]/10 hover:shadow-xl transition-all relative overflow-hidden math-corner gama-selected-locked" id="gama-mncxse0x-45" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"><div class="w-12 h-12 bg-[#3A5683]/10 text-[#3A5683] flex items-center justify-center mb-6" id="gama-mncxse0x-46"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="gama-mncxse0x-47"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" id="gama-mncxse0x-48"></path></svg></div><p class="text-[10px] font-bold tracking-[0.2em] uppercase text-[#8AA4C8] mb-4" id="gama-mncxse0x-49">Office Hours</p><p class="text-sm text-[#0C102A] leading-relaxed" id="gama-mncxse0x-50"><span class="font-bold" id="gama-mncxse0x-51">Mon – Fri:</span> 09:00 – 16:00<br id="gama-mncxse0x-52"><span class="font-bold" id="gama-mncxse0x-53">Sat:</span> Appointment Only<br id="gama-mnd2b4zt-0"><span class="font-bold" id="gama-mnd2b4zt-1">Sun:</span> Closed</p></div>
         </div>
       </div>
     </section>
     
     <!-- Enrolment & Enquiry Form Section -->
-    <section class="py-20 md:py-32 px-6 md:px-12 bg-white border-y border-[#0C102A]/5 gama-selected-locked" id="gama-mmpxbmyq-51">
-      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24" id="gama-mmpxbmyq-52">
-        <div class="lg:col-span-5 fade-section" id="gama-mmpxbmyq-53" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-          <h2 class="text-xs md:text-sm font-extrabold uppercase tracking-widest text-[#3A5683] mb-4" id="gama-mmpxbmyq-54">Enrolment &amp; Enquiry</h2>
-          <p class="text-3xl sm:text-4xl md:text-6xl font-light tracking-tight text-[#0C102A] leading-tight mb-8" id="gama-mmpxbmyq-55">
-            Start your journey with us today.
+    <section class="py-20 md:py-32 px-6 md:px-12 bg-white border-y border-[#0C102A]/5 workbook-grid" id="gama-mncxse0x-54">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24" id="gama-mncxse0x-55">
+        
+        <div class="lg:col-span-5 hepa-text workbook-margin pl-6 md:pl-10" id="gama-mncxse0x-56">
+          <h2 class="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tighter text-[#0C102A] uppercase mb-2" id="gama-mncxse0x-57">ENQUIRY</h2>
+          
+          <div class="w-12 h-1 bg-[#3A5683] mb-8" id="gama-mncxse0x-59"></div>
+          <p class="text-[#3A5683] text-base md:text-lg leading-relaxed font-light mb-6" id="gama-mncxse0x-60">
+            Start your journey with us today. To help us understand exactly how to assist your child, please provide us with a few details.
           </p>
-          <p class="text-[#3A5683] text-base md:text-lg leading-relaxed font-light" id="gama-mmpxbmyq-56">
-            To help us understand exactly how to assist your child, please provide us with a few details. Don't worry about the current marks—this just helps us establish a baseline so we can track their incredible progress!
+          <p class="text-[#0C102A]/70 text-sm md:text-base leading-relaxed" id="gama-mncxse0x-61">
+            Don't worry about the current marks—this just helps us establish a baseline so we can track their incredible progress!
           </p>
         </div>
-        <div class="lg:col-span-7 fade-section" id="gama-mmpxbmyq-57" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
-          <form class="space-y-12 flex flex-col" onsubmit="event.preventDefault();" id="gama-mmpxbmyq-58">
+
+        <div class="lg:col-span-7 bento-box" id="gama-mncxse0x-62">
+          <form class="space-y-12 flex flex-col bg-[#F8FAFC] p-8 md:p-12 border border-gray-100 relative overflow-hidden math-corner" onsubmit="event.preventDefault();" id="gama-mncxse0x-63">
+            
             <!-- Your Details -->
-            <div class="space-y-10" id="gama-mmpxbmyq-59">
-              <h3 class="text-xs font-bold uppercase tracking-widest text-[#0C102A] border-l-4 border-[#3A5683] pl-4" id="gama-mmpxbmyq-60">Your Details</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8" id="gama-mmpxbmyq-61">
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-3 group" id="gama-mmpxbmyq-62">
-                  <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#0C102A] transition-colors" id="gama-mmpxbmyq-63">Parent/Guardian Name</label>
-                  <input type="text" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter full name" required="" id="gama-mmpxbmyq-64">
+            <section class="space-y-10" id="gama-mncxse0x-64">
+              <h3 class="text-xs font-bold uppercase tracking-widest text-[#0C102A] border-l-4 border-[#3A5683] pl-4" id="gama-mncxse0x-65">Your Details</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8" id="gama-mncxse0x-66">
+                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-67">
+                  <label for="parent_name" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-68">Parent/Guardian Name</label>
+                  <input type="text" id="parent_name" name="parent_name" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter full name" required="">
                 </div>
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-3 group" id="gama-mmpxbmyq-65">
-                  <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#0C102A] transition-colors" id="gama-mmpxbmyq-66">Learner Name</label>
-                  <input type="text" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter learner's name" required="" id="gama-mmpxbmyq-67">
+                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-70">
+                  <label for="learner_name" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-71">Learner Name</label>
+                  <input type="text" id="learner_name" name="learner_name" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter learner's name" required="">
                 </div>
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-3 group" id="gama-mmpxbmyq-68">
-                  <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#0C102A] transition-colors" id="gama-mmpxbmyq-69">Contact Number</label>
-                  <input type="tel" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="e.g. 082 123 4567" required="" id="gama-mmpxbmyq-70">
+                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-73">
+                  <label for="contact_number" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-74">Contact Number</label>
+                  <input type="tel" id="contact_number" name="contact_number" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="e.g. 082 123 4567" required="">
                 </div>
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-3 group" id="gama-mmpxbmyq-71">
-                  <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#0C102A] transition-colors" id="gama-mmpxbmyq-72">Email Address</label>
-                  <input type="email" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter email address" required="" id="gama-mmpxbmyq-73">
+                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-76">
+                  <label for="email_address" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-77">Email Address</label>
+                  <input type="email" id="email_address" name="email_address" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter email address" required="">
                 </div>
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-3 group md:col-span-2" id="gama-mmpxbmyq-location-group">
-                  <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#0C102A] transition-colors" id="gama-mmpxbmyq-location-label">Residential Area</label>
-                  <input type="text" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="e.g. Nelspruit, White River, Lekazi, Karino" required="" id="gama-mmpxbmyq-location-input">
+                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group md:col-span-2 transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-79">
+                  <label for="residential_area" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-80">Residential Area</label>
+                  <input type="text" id="residential_area" name="residential_area" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="e.g. Nelspruit, White River, Lekazi, Karino" required="">
                 </div>
               </div>
-            </div>
+            </section>
 
             <!-- Academic Profile -->
-            <div class="space-y-10 pt-6" id="gama-mmpxbmyq-74">
-              <h3 class="text-xs font-bold uppercase tracking-widest text-[#0C102A] border-l-4 border-[#3A5683] pl-4" id="gama-mmpxbmyq-75">Learner's Academic Profile</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8" id="gama-mmpxbmyq-76">
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-3 group" id="gama-mmpxbmyq-77">
-                  <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#0C102A] transition-colors" id="gama-mmpxbmyq-78">Current Grade</label>
-                  <select class="w-full bg-transparent border-none outline-none text-[#0C102A] text-lg font-medium focus:ring-0 cursor-pointer appearance-none" required="" id="gama-mmpxbmyq-79">
-                    <option value="" disabled="" selected="" class="text-[#0C102A]/20" id="gama-mmpxbmyq-80">Select Grade</option>
-                    <option value="8" id="gama-mmpxbmyq-81">Grade 8</option>
-                    <option value="9" id="gama-mmpxbmyq-82">Grade 9</option>
-                    <option value="10" id="gama-mmpxbmyq-83">Grade 10</option>
-                    <option value="11" id="gama-mmpxbmyq-84">Grade 11</option>
-                    <option value="12" id="gama-mmpxbmyq-85">Grade 12</option>
-                    <option value="rewrite" id="gama-mmpxbmyq-86">Matric Rewrite</option>
+            <section class="space-y-10 pt-6" id="gama-mncxse0x-82">
+              <h3 class="text-xs font-bold uppercase tracking-widest text-[#0C102A] border-l-4 border-[#3A5683] pl-4" id="gama-mncxse0x-83">Learner's Academic Profile</h3>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8" id="gama-mncxse0x-84">
+                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-85">
+                  <label for="grade-select" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-86">Current Grade</label>
+                  <select id="grade-select" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium focus:ring-0 cursor-pointer appearance-none" required="" onchange="filterSubjects()">
+                    <option value="" disabled="" selected="" class="text-[#0C102A]/20" id="gama-mnd1x4rs-0">Select Grade</option>
+                    <option value="primary" id="gama-mnd1x4rs-1">Primary School</option>
+                    <option value="8" id="gama-mnd1x4rs-2">Grade 8</option>
+                    <option value="9" id="gama-mnd1x4rs-3">Grade 9</option>
+                    <option value="10" id="gama-mnd1x4rs-4">Grade 10</option>
+                    <option value="11" id="gama-mnd1x4rs-5">Grade 11</option>
+                    <option value="12" id="gama-mnd1x4rs-6">Grade 12</option>
+                    <option value="rewrite" id="gama-mnd1x4rs-7">Matric Rewrite</option>
                   </select>
                 </div>
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-3 group" id="gama-mmpxbmyq-87">
-                  <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#0C102A] transition-colors" id="gama-mmpxbmyq-88">Learner's Current School</label>
-                  <input type="text" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="School Name" id="gama-mmpxbmyq-89">
+                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-95">
+                  <label for="current_school" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-96">Learner's Current School</label>
+                  <input type="text" id="current_school" name="current_school" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="School Name">
                 </div>
               </div>
               
-              <div class="flex flex-col gap-6" id="gama-mmpxbmyq-90">
-                <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2" id="gama-mmpxbmyq-91">Subject(s) Requiring Assistance</label>
-                <div class="flex flex-wrap gap-8" id="gama-mmpxbmyq-92">
-                  <label class="flex items-center space-x-3 cursor-pointer" id="gama-mmpxbmyq-93">
-                    <input type="checkbox" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mmpxbmyq-94">
-                    <span class="text-base font-medium text-[#0C102A]" id="gama-mmpxbmyq-95">Core Mathematics</span>
+              <div class="flex flex-col gap-6" id="gama-mncxse0x-98">
+                <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2" id="gama-mncxse0x-99">Subject(s) Requiring Assistance</label>
+                <p id="subject-notice" class="text-xs text-[#3A5683] font-medium -mt-4 hidden italic">Please select a grade first to see available subjects.</p>
+                <div class="flex flex-wrap gap-8" id="subject-container">
+                  <label class="flex items-center space-x-3 cursor-pointer" id="cont-math">
+                    <input type="checkbox" name="subjects" value="mathematics" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-8">
+                    <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-9">Mathematics</span>
                   </label>
-                  <label class="flex items-center space-x-3 cursor-pointer" id="gama-mmpxbmyq-96">
-                    <input type="checkbox" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mmpxbmyq-97">
-                    <span class="text-base font-medium text-[#0C102A]" id="gama-mmpxbmyq-98">Physical Sciences</span>
+                  <label class="hidden items-center space-x-3 cursor-pointer" id="cont-physical-sciences">
+                    <input type="checkbox" name="subjects" value="physical-sciences" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-10">
+                    <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-11">Physical Sciences</span>
+                  </label>
+                  <label class="hidden items-center space-x-3 cursor-pointer" id="cont-afrikaans">
+                    <input type="checkbox" name="subjects" value="afrikaans" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-12">
+                    <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-13">Afrikaans</span>
+                  </label>
+                  <label class="hidden items-center space-x-3 cursor-pointer" id="cont-english">
+                    <input type="checkbox" name="subjects" value="english" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-14">
+                    <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-15">English</span>
+                  </label>
+                  <label class="hidden items-center space-x-3 cursor-pointer" id="cont-natural-sciences">
+                    <input type="checkbox" name="subjects" value="natural-sciences" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-16">
+                    <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-17">Natural Sciences</span>
                   </label>
                 </div>
               </div>
 
-              <div class="flex flex-col border-b border-[#0C102A]/20 pb-3 group" id="gama-mmpxbmyq-99">
-                <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#0C102A] transition-colors" id="gama-mmpxbmyq-100">Latest Mark / Percentage (Approximate)</label>
-                <input type="text" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="e.g. Maths 42%, Science 50%" id="gama-mmpxbmyq-101">
+              <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-107">
+                <label for="latest_mark" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-108">Latest Mark / Percentage (Approximate)</label>
+                <input type="text" id="latest_mark" name="latest_mark" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="e.g. Maths 42%, Science 50%">
               </div>
-            </div>
+            </section>
 
             <!-- Help Area -->
-            <div class="space-y-6 pt-6" id="gama-mmpxbmyq-102">
-              <h3 class="text-xs font-bold uppercase tracking-widest text-[#0C102A] border-l-4 border-[#3A5683] pl-4" id="gama-mmpxbmyq-103">How Can We Help?</h3>
-              <div class="flex flex-col border-b border-[#0C102A]/20 pb-3 group" id="gama-mmpxbmyq-104">
-                <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#0C102A] transition-colors" id="gama-mmpxbmyq-105">Message / Specific Areas of Struggle</label>
-                <textarea rows="4" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0 resize-none" placeholder="Tell us a bit more... e.g., struggling with Trigonometry, needs upgrade for Engineering, or lacks confidence in exams." required="" id="gama-mmpxbmyq-106"></textarea>
+            <section class="space-y-6 pt-6" id="gama-mncxse0x-110">
+              <h3 class="text-xs font-bold uppercase tracking-widest text-[#0C102A] border-l-4 border-[#3A5683] pl-4" id="gama-mncxse0x-111">How Can We Help?</h3>
+              <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-112">
+                <label for="message" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-113">Message / Specific Areas of Struggle</label>
+                <textarea id="message" name="message" rows="4" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0 resize-none" placeholder="Tell us a bit more... e.g., struggling with Trigonometry, needs upgrade for Engineering, or lacks confidence in exams." required=""></textarea>
               </div>
-            </div>
+            </section>
 
-            <button type="submit" class="self-start mt-4 bg-[#0C102A] text-white px-10 py-5 rounded-none font-bold uppercase tracking-[0.2em] hover:bg-[#3A5683] transition-colors duration-500 text-sm md:text-base w-full md:w-auto" id="gama-mmpxbmyq-107">
+            <button type="submit" class="self-start mt-4 bg-[#0C102A] text-white px-8 py-4 rounded-none font-bold uppercase tracking-widest hover:bg-[#3A5683] transition-all duration-500 text-sm w-full md:w-auto" aria-label="Submit Enquiry" id="gama-mnd1x4rs-18">
               Submit Enquiry
             </button>
+
+            <script>
+              function filterSubjects() {
+                const grade = document.getElementById('grade-select').value;
+                const subjects = {
+                  math: document.getElementById('cont-math'),
+                  physics: document.getElementById('cont-physical-sciences'),
+                  afrikaans: document.getElementById('cont-afrikaans'),
+                  english: document.getElementById('cont-english'),
+                  ns: document.getElementById('cont-natural-sciences')
+                };
+                
+                // Reset all checkboxes to hidden
+                Object.values(subjects).forEach(el => {
+                  el.classList.add('hidden');
+                  el.classList.remove('flex');
+                  el.querySelector('input').checked = false;
+                });
+
+                // Always show Math
+                subjects.math.classList.remove('hidden');
+                subjects.math.classList.add('flex');
+
+                if (grade === 'primary') {
+                  subjects.afrikaans.classList.remove('hidden');
+                  subjects.afrikaans.classList.add('flex');
+                  subjects.english.classList.remove('hidden');
+                  subjects.english.classList.add('flex');
+                } else if (grade === '8' || grade === '9') {
+                  subjects.ns.classList.remove('hidden');
+                  subjects.ns.classList.add('flex');
+                } else if (['10', '11', '12', 'rewrite'].includes(grade)) {
+                  subjects.physics.classList.remove('hidden');
+                  subjects.physics.classList.add('flex');
+                }
+              }
+            </script>
           </form>
         </div>
       </div>
     </section>
     
-    <!-- What Happens Next Section -->
-    <section class="py-24 md:py-40 px-6 md:px-12 bg-[#3A5683]/5" id="gama-mmpxbmyq-108">
-      <div class="max-w-7xl mx-auto" id="gama-mmpxbmyq-109">
-        <div class="text-center mb-16 md:mb-24 fade-section" id="gama-mmpxbmyq-110">
-          <h2 class="text-[10px] md:text-xs font-extrabold uppercase tracking-[0.2em] text-[#3A5683] mb-4" id="gama-mmpxbmyq-111">The Process</h2>
-          <p class="text-5xl md:text-7xl font-black tracking-tighter text-[#0C102A] uppercase leading-none" id="gama-mmpxbmyq-112">
-            What Happens <br id="gama-mmpxbmyq-113"><span class="font-light text-[#3A5683]" id="gama-mmpxbmyq-114">Next?</span>
-          </p>
+    <!-- What Happens Next Section (Dark Mode for Rhythm) -->
+    <section class="py-20 md:py-32 px-6 md:px-12 bg-[#0C102A] text-white relative overflow-hidden workbook-grid-dark" id="gama-mncxse0x-116">
+      <div class="max-w-7xl mx-auto relative z-10" id="gama-mncxse0x-117">
+        <div class="text-center mb-16 md:mb-24 hepa-text" id="gama-mncxse0x-118">
+          <h2 class="text-xs md:text-sm font-bold uppercase tracking-widest text-[#8AA4C8] mb-4" id="gama-mncxse0x-119">The Process</h2>
+          <h3 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter uppercase mb-6" id="gama-mncxse0x-120">What Happens <span class="font-light text-[#8AA4C8]" id="gama-mncxse0x-121">Next?</span></h3>
+          <div class="w-24 h-1 bg-[#3A5683] mx-auto mb-6" id="gama-mncxse0x-122"></div>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12" id="gama-mmpxbmyq-115">
-          <div class="fade-section flex flex-col items-center text-center" id="gama-mmpxbmyq-116">
-            <div class="w-16 h-16 bg-[#0C102A] text-white flex items-center justify-center font-bold text-xl mb-8" id="gama-mmpxbmyq-117">01</div>
-            <h4 class="text-xl font-bold mb-4 uppercase tracking-tight" id="gama-mmpxbmyq-118">We Review Your Details</h4>
-            <p class="text-[#3A5683] font-light leading-relaxed" id="gama-mmpxbmyq-119">Eben or one of our lead tutors will review your child’s grade and latest marks to see which class or tutor is the best fit.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="gama-mncxse0x-123">
+          <div class="stat-item bg-white/5 p-8 border border-white/10 hover:bg-white/10 transition-all relative overflow-hidden flex flex-col items-center text-center" id="gama-mncxse0x-124">
+            <div class="w-16 h-16 bg-[#3A5683]/20 text-[#8AA4C8] flex items-center justify-center font-extrabold text-xl mb-6 rounded-full" id="gama-mncxse0x-125">01</div>
+            <h4 class="text-xl font-bold mb-4 uppercase tracking-tight text-white" id="gama-mncxse0x-126">We Review Your Details</h4>
+            <p class="text-[#8AA4C8] text-sm md:text-base leading-relaxed" id="gama-mncxse0x-127">Eben or one of our lead tutors will review your child’s grade and latest marks to see which class or tutor is the best fit.</p>
           </div>
-          <div class="fade-section flex flex-col items-center text-center" id="gama-mmpxbmyq-120">
-            <div class="w-16 h-16 bg-[#0C102A] text-white flex items-center justify-center font-bold text-xl mb-8" id="gama-mmpxbmyq-121">02</div>
-            <h4 class="text-xl font-bold mb-4 uppercase tracking-tight" id="gama-mmpxbmyq-122">We Reach Out</h4>
-            <p class="text-[#3A5683] font-light leading-relaxed" id="gama-mmpxbmyq-123">We will contact you via phone or WhatsApp to discuss your goals and answer any questions you might have.</p>
+          <div class="stat-item bg-white/5 p-8 border border-white/10 hover:bg-white/10 transition-all relative overflow-hidden flex flex-col items-center text-center" id="gama-mncxse0x-128">
+            <div class="w-16 h-16 bg-[#3A5683]/20 text-[#8AA4C8] flex items-center justify-center font-extrabold text-xl mb-6 rounded-full" id="gama-mncxse0x-129">02</div>
+            <h4 class="text-xl font-bold mb-4 uppercase tracking-tight text-white" id="gama-mncxse0x-130">We Reach Out</h4>
+            <p class="text-[#8AA4C8] text-sm md:text-base leading-relaxed" id="gama-mncxse0x-131">We will contact you via phone or WhatsApp to discuss your goals and answer any questions you might have.</p>
           </div>
-          <div class="fade-section flex flex-col items-center text-center" id="gama-mmpxbmyq-124">
-            <div class="w-16 h-16 bg-[#0C102A] text-white flex items-center justify-center font-bold text-xl mb-8" id="gama-mmpxbmyq-125">03</div>
-            <h4 class="text-xl font-bold mb-4 uppercase tracking-tight" id="gama-mmpxbmyq-126">Start Learning</h4>
-            <p class="text-[#3A5683] font-light leading-relaxed" id="gama-mmpxbmyq-127">We’ll book your first session or free assessment and start the journey to better marks!</p>
+          <div class="stat-item bg-white/5 p-8 border border-white/10 hover:bg-white/10 transition-all relative overflow-hidden flex flex-col items-center text-center" id="gama-mncxse0x-132">
+            <div class="w-16 h-16 bg-[#3A5683]/20 text-[#8AA4C8] flex items-center justify-center font-extrabold text-xl mb-6 rounded-full" id="gama-mncxse0x-133">03</div>
+            <h4 class="text-xl font-bold mb-4 uppercase tracking-tight text-white" id="gama-mncxse0x-134">Start Learning</h4>
+            <p class="text-[#8AA4C8] text-sm md:text-base leading-relaxed" id="gama-mncxse0x-135">We’ll book your first session or free assessment and start the journey to better marks!</p>
           </div>
         </div>
       </div>
     </section>
     
-    <!-- Location Footer Summary Section -->
-    
   </main>
   
   <!-- Footer -->
-  <footer class="bg-[#0C102A] text-white pt-16 md:pt-24 pb-10 md:pb-12 px-6 md:px-12" id="gama-mmpxbmyq-134">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 border-b border-white/10 pb-12 md:pb-16" id="gama-mmpxbmyq-135">
-      <div class="max-w-sm" id="gama-mmpxbmyq-136">
-        <div class="text-white font-extrabold text-2xl md:text-3xl tracking-tighter uppercase mb-4 md:mb-6" id="gama-mmpxbmyq-137">
-          EMASA<span class="text-[#8AA4C8]" id="gama-mmpxbmyq-138">.</span>
-        </div>
-        <p class="text-white/50 text-sm leading-relaxed" id="gama-mmpxbmyq-139">
-          An elite academic institution dedicated to demystifying mathematics and pure sciences for Grade 8-12 and Matric Rewrite levels.
-        </p>
-      </div>
-      <div class="w-full md:w-auto" id="gama-mmpxbmyq-140">
-        <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-6" id="gama-mmpxbmyq-141">Directory</h4>
-        <nav class="flex flex-col space-y-4 text-sm font-semibold" id="gama-mmpxbmyq-142">
-          <a href="index.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxbmyq-143">Home</a>
-          <a href="about.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxbmyq-144">About Us</a>
-          <a href="subjects.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxbmyq-145">Our Subjects</a>
-          <a href="contact.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxbmyq-147">Contact Us</a>
+  <footer class="bg-white text-slate-900 pt-16 md:pt-24 pb-10 md:pb-12 px-6 md:px-12 border-t border-slate-200" id="gama-mncxse0x-136">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 border-b border-slate-100 pb-12 md:pb-16" id="gama-mncxse0x-137">
+      <div class="w-full md:w-auto" id="gama-mncxse0x-138">
+        <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-6" id="gama-mncxse0x-139">Directory</h4>
+        <nav class="flex flex-col space-y-4 text-sm font-semibold" id="gama-mncxse0x-140">
+          <a href="index.html" class="text-slate-800 hover:text-accent transition-colors" id="gama-mncxse0x-141">Home</a>
+          <a href="about.html" class="text-slate-800 hover:text-accent transition-colors" id="gama-mncxse0x-142">About Us</a>
+          <a href="subjects.html" class="text-slate-800 hover:text-accent transition-colors" id="gama-mncxse0x-143">Subjects</a>
+          <a href="contact.html" class="text-slate-800 hover:text-accent transition-colors" id="gama-mncxse0x-144">Contact Us</a>
         </nav>
       </div>
+      <div class="max-w-sm flex flex-col md:items-end md:text-right" id="gama-mncxse0x-145">
+        <div class="mb-4 md:mb-6 flex md:justify-end" id="gama-mncxse0x-146">
+          <img src="https://res.cloudinary.com/db7ddka03/image/upload/v1774530176/Emasa_Main_Logo_zjm58l.png" alt="Eben Maths and Science Academy Logo" class="h-20 md:h-24 w-auto" id="gama-mncxse0x-147">
+        </div>
+        <p class="text-slate-600 text-sm leading-relaxed" id="gama-mncxse0x-148">An elite academic institution dedicated to simplifying mathematics and sciences.</p>
+      </div>
     </div>
-    <div class="max-w-7xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left text-xs text-white/30 uppercase tracking-widest" id="gama-mmpxbmyq-148">
-      <p id="gama-mmpxbmyq-149">© 2024 Eben Math and Science Academy (EMASA). All rights reserved.</p>
-      <p class="mt-4 md:mt-0 uppercase" id="gama-mmpxbmyq-150">Maths Made Simple</p>
+    <div class="max-w-7xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left text-xs text-slate-400 uppercase tracking-widest" id="gama-mncxse0x-149">
+      <p id="gama-mncxse0x-150">© 2026 Eben Maths and Science Academy (EMASA). All rights reserved.</p>
     </div>
   </footer>
   
-  <!-- GSAP Animation Initialization -->
+  <!-- Animation Scripts -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       gsap.registerPlugin(ScrollTrigger);
       
+      // Mobile Menu Logic
       const menuTl = gsap.timeline({ paused: true, reversed: true });
       menuTl.to('#mobile-menu', {
         display: 'flex',
         clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-        duration: 0.8,
+        duration: 0.6,
         ease: 'power4.inOut'
-      }).fromTo('.mobile-link', {
-        y: 30,
-        opacity: 0
-      }, {
-        y: 0,
-        opacity: 1,
-        stagger: 0.1,
-        duration: 0.5,
-        ease: 'power3.out'
-      }, '-=0.4');
-      
+      }).fromTo('.mobile-link', { 
+        y: 30, 
+        opacity: 0 
+      }, { 
+        y: 0, 
+        opacity: 1, 
+        stagger: 0.1, 
+        duration: 0.4, 
+        ease: 'power3.out' 
+      }, '-=0.2');
+
       const btn = document.getElementById('mobile-menu-btn');
       const hamburgerIcon = document.getElementById('hamburger-icon');
       const closeIcon = document.getElementById('close-icon');
-      
+
       btn.addEventListener('click', () => {
         if (menuTl.reversed()) {
           menuTl.play();
@@ -364,26 +438,29 @@
           closeIcon.classList.add('hidden');
         }
       });
-      
-      gsap.from('.animate-fade-in-up > *', {
-        y: 50,
-        opacity: 0,
-        stagger: 0.15,
-        duration: 1,
-        ease: 'power3.out',
-        delay: 0.2
+
+      // Page Load Animations
+      gsap.from('.hero-text', { 
+        y: 40, 
+        opacity: 0, 
+        stagger: 0.15, 
+        duration: 1, 
+        ease: 'power4.out', 
+        delay: 0.2 
       });
-      
-      gsap.utils.toArray('.fade-section').forEach(section => {
-        gsap.from(section, {
-          scrollTrigger: { trigger: section, start: 'top 85%' },
+
+      // Scroll Animations
+      gsap.utils.toArray('.bento-box, .stat-item, .hepa-text').forEach(el => {
+        gsap.from(el, {
+          scrollTrigger: { trigger: el, start: 'top 85%' },
           y: 40,
           opacity: 0,
           duration: 0.8,
-          ease: 'power3.out'
+          ease: 'power2.out'
         });
       });
     });
   </script>
+
 
 </body></html>

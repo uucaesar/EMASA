@@ -1,451 +1,375 @@
 <html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>Subjects | EMASA - Mathematics &amp; Science Tuition South Africa</title>
-    <meta name="description" content="Expert CAPS and IEB-aligned tuition for Mathematics and Physical Sciences in South Africa. EMASA provides Grade 8-12 support and specialised Matric Rewrite programmes.">
-    
-    <!-- Open Graph Tags -->
-    <meta property="og:title" content="Subjects | EMASA">
-    <meta property="og:description" content="Master Mathematics and Physical Sciences with expert Grade 8-12 tuition and Matric Upgrade programmes at EMASA.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.ebenmathandscience.co.za/subjects.html">
-    <meta property="og:image" content="https://www.ebenmathandscience.co.za/images/og-image.jpg">
-    
-    <!-- Local SEO Schema -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "TutoringService",
-            "@id": "https://www.ebenmathandscience.co.za/#organization",
-            "name": "EMASA (Eben Math and Science Academy)",
-            "description": "CAPS and IEB-aligned tuition in Mathematics and Physical Sciences for Grade 8-12 and Matric Rewrites.",
-            "url": "https://www.ebenmathandscience.co.za/",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "South Africa",
-              "addressCountry": "ZA"
-            },
-            "areaServed": "ZA"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Subjects | EMASA - Mathematics, Science &amp; Primary Education</title>
+  <meta name="description" content="Comprehensive tuition from Grade 1 to 12. Expert support in Mathematics, Physical Sciences, Natural Sciences, and Matric Upgrades at EMASA South Africa.">
+  
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Subjects | EMASA">
+  <meta property="og:description" content="Master Mathematics, Physical Sciences, and Natural Sciences with expert Grade 1-12 tuition and Matric Upgrade programmes at EMASA.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ebenmathandscience.co.za/subjects">
+  <meta property="og:image" content="https://www.ebenmathandscience.co.za/assets/images/og-image.jpg">
+  
+  <!-- Local SEO Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph":[
+        {
+          "@type": "TutoringService",
+          "@id": "https://www.ebenmathandscience.co.za/#organization",
+          "name": "Eben Maths and Science Academy",
+          "alternateName": "EMASA",
+          "description": "CAPS and IEB-aligned tuition in Mathematics and Physical Sciences for Grade 1-12 and Matric Rewrites.",
+          "url": "https://www.ebenmathandscience.co.za",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "South Africa",
+            "addressCountry": "ZA"
           },
-          {
-            "@type": "Course",
-            "name": "Core Mathematics (Grades 8-12)",
-            "description": "Comprehensive math tuition covering Paper 1 and Paper 2 for CAPS and IEB curricula.",
-            "provider": {
-              "@id": "https://www.ebenmathandscience.co.za/#organization"
-            }
-          },
-          {
-            "@type": "Course",
-            "name": "Physical Sciences (Physics & Chemistry)",
-            "description": "In-depth science tuition focusing on Newton's Laws, Chemistry stoichiometry, and practical exam prep.",
-            "provider": {
-              "@id": "https://www.ebenmathandscience.co.za/#organization"
-            }
-          },
-          {
-            "@type": "Course",
-            "name": "Matric Upgrades & Rewrites",
-            "description": "Specialised programme for students aiming to improve their APS score and secure university entrance.",
-            "provider": {
-              "@id": "https://www.ebenmathandscience.co.za/#organization"
-            }
+          "areaServed": "ZA"
+        },
+        {
+          "@type": "Course",
+          "name": "High School Mathematics (Grades 8-12)",
+          "description": "From foundational arithmetic to advanced calculus, we build strong problem-solving skills.",
+          "provider": {
+            "@id": "https://www.ebenmathandscience.co.za/#organization"
           }
-        ]
-      }
-    </script>
+        },
+        {
+          "@type": "Course",
+          "name": "Physical Sciences (Grade 10-12)",
+          "description": "Demystifying the physical world through practical examples and interactive teaching.",
+          "provider": {
+            "@id": "https://www.ebenmathandscience.co.za/#organization"
+          }
+        }
+      ]
+    }
+  </script>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&amp;display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            }
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;600;800&amp;display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
           }
         }
       }
-    </script>
-    
-    <!-- Custom Styles -->
-    <style>
-      .text-accent {
-        color: #8AA4C8;
-      }
-      .hover\:text-accent:hover {
-        color: #8AA4C8;
-      }
-    </style>
-    
-    <!-- GSAP Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  </head>
-  <body class="bg-[#F8FAFC] text-[#0C102A] font-sans antialiased selection:bg-[#3A5683] selection:text-white overflow-x-hidden">
-    
-    <!-- Header -->
-    <header class="fixed top-0 left-0 w-full z-50 px-6 md:px-12 py-4 md:py-6 flex justify-between items-center mix-blend-difference" id="gama-mmpxmnv1-0">
-      <div class="text-white font-extrabold text-xl md:text-2xl tracking-tighter uppercase relative z-50" id="gama-mmpxmnv1-1">
-        EMASA<span class="text-[#8AA4C8]" id="gama-mmpxmnv1-2">.</span>
-      </div>
-      
-      <!-- Desktop Navigation -->
-      <nav class="hidden md:flex space-x-8 text-sm font-semibold" id="gama-mmpxmnv1-3">
-        <a href="index.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxmnv1-4">Home</a>
-        <a href="about.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxmnv1-5">About Us</a>
-        <a href="subjects.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxmnv1-6">Our Subjects</a>
-        <a href="contact.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxmnv1-8">Contact Us</a>
-      </nav>
-      
-      <!-- Mobile Menu Button -->
-      <button id="mobile-menu-btn" class="block md:hidden text-white focus:outline-none z-50 transition-transform" aria-label="Toggle mobile menu">
-        <svg id="hamburger-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" id="gama-mmpxmnv1-9"></path>
-        </svg>
-        <svg id="close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" id="gama-mmpxmnv1-10"></path>
-        </svg>
-      </button>
-    </header>
-    
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu" class="fixed inset-0 bg-[#0C102A] z-40 flex-col items-center justify-center space-y-8 text-lg font-bold uppercase tracking-widest" style="display:none; clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);">
-      <a href="index.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mmpxmnv1-11">Home</a>
-      <a href="about.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mmpxmnv1-12">About Us</a>
-      <a href="subjects.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mmpxmnv1-13">OurSubjects</a>
-      <a href="contact.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mmpxmnv1-15">Contact Us</a>
-    </div>
-    
-    <!-- Main Content -->
-    <main id="gama-mmpxmnv1-16">
-      
-      <!-- Section 1: Hero Section -->
-      <section class="pt-32 md:pt-48 pb-16 md:pb-24 bg-[#0C102A] px-6 md:px-12 relative overflow-hidden" id="gama-mmpxmnv1-17">
-        <div class="absolute inset-0 z-0" id="gama-mmpxmnv1-18">
-          <div class="absolute top-[-50%] right-[-10%] w-[60vw] h-[60vw] bg-[#3A5683]/20 rounded-full blur-[100px]" id="gama-mmpxmnv1-19"></div>
-        </div>
-        <div class="max-w-7xl mx-auto relative z-10 animate-fade-in-up" id="gama-mmpxmnv1-20">
-          <div class="text-[#8AA4C8] text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] mb-6 md:mb-8" id="gama-mmpxmnv1-21">
-            <a href="index.html" class="hover:text-white transition-colors" id="gama-mmpxmnv1-22">EMASA</a> <span class="mx-3 opacity-50" id="gama-mmpxmnv1-23">/</span> <span class="text-white" id="gama-mmpxmnv1-24">Subjects</span>
-          </div>
-          <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter text-white uppercase mb-6 md:mb-8 leading-[0.9]" id="gama-mmpxmnv1-25">
-            Master the Subjects <br id="gama-mmpxmnv1-26"><span class="font-light text-[#8AA4C8]" id="gama-mmpxmnv1-27">That Matter Most</span>
-          </h1>
-          <p class="text-[#8AA4C8] text-sm md:text-lg max-w-2xl font-light leading-relaxed" id="gama-mmpxmnv1-28">
-            From building strong foundations in Grade 8 to securing distinctions in Grade 12, EMASA offers expert, CAPS and IEB-aligned tuition in Mathematics and Physical Sciences.
-          </p>
-        </div>
-      </section>
-
-      <!-- Section 2: Core Mathematics -->
-      <section class="py-20 md:py-32 bg-white px-6 md:px-12 border-b border-[#0C102A]/5 overflow-hidden" id="gama-mmpxmnv1-29">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center" id="gama-mmpxmnv1-30">
-          <div class="lg:col-span-5 order-2 lg:order-1 slide-up-el" id="gama-mmpxmnv1-31">
-            <div class="text-[6rem] md:text-[10rem] font-black text-[#0C102A]/5 leading-none mb-2 md:mb-4 -ml-2 tracking-tighter" id="gama-mmpxmnv1-32">01</div>
-            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tighter text-[#0C102A] uppercase mb-4 md:mb-6" id="gama-mmpxmnv1-33">
-              Core <br id="gama-mmpxmnv1-34"><span class="font-light text-[#3A5683]" id="gama-mmpxmnv1-35">Mathematics</span>
-            </h2>
-            <div class="inline-block px-3 py-1 bg-[#F8FAFC] border border-[#0C102A]/10 text-[10px] font-bold uppercase tracking-widest text-[#3A5683] mb-6 md:mb-8" id="gama-mmpxmnv1-36">
-              Grades 8 — 12
-            </div>
-            <blockquote class="text-[#0C102A] font-semibold italic border-l-4 border-[#3A5683] pl-4 mb-8 text-sm md:text-base" id="gama-mmpxmnv1-37">
-              "Don’t let Maths stand between you and your dream degree."
-            </blockquote>
-            <p class="text-[#3A5683] text-sm md:text-base leading-relaxed mb-8 font-light max-w-lg" id="gama-mmpxmnv1-38">
-              Mathematics is the ultimate gateway subject. At EMASA, we take the fear out of Maths by breaking down abstract concepts into logical, step-by-step methods. We cover the full syllabus, equipping learners to handle both the technical calculations of Paper 1 and the spatial reasoning for Paper 2.
-            </p>
-            <ul class="space-y-4" id="gama-mmpxmnv1-39">
-              <li class="flex items-start gap-4 text-[#0C102A] text-sm font-semibold" id="gama-mmpxmnv1-40">
-                <div class="w-1.5 h-1.5 bg-[#3A5683] mt-1.5 rounded-full flex-shrink-0" id="gama-mmpxmnv1-41"></div>
-                <span id="gama-mmpxmnv1-42">Junior Phase (Grades 8 &amp; 9): Building an unshakable foundation in Algebra and Geometry.</span>
-              </li>
-              <li class="flex items-start gap-4 text-[#0C102A] text-sm font-semibold" id="gama-mmpxmnv1-43">
-                <div class="w-1.5 h-1.5 bg-[#3A5683] mt-1.5 rounded-full flex-shrink-0" id="gama-mmpxmnv1-44"></div>
-                <span id="gama-mmpxmnv1-45">Senior Phase (Grades 10–12): Functions, Trigonometry, and Differential Calculus.</span>
-              </li>
-              <li class="flex items-start gap-4 text-[#0C102A] text-sm font-semibold" id="gama-mmpxmnv1-46">
-                <div class="w-1.5 h-1.5 bg-[#3A5683] mt-1.5 rounded-full flex-shrink-0" id="gama-mmpxmnv1-47"></div>
-                <span id="gama-mmpxmnv1-48">Exam Strategy: Identifying question types and securing partial marks under pressure.</span>
-              </li>
-            </ul>
-          </div>
-          <div class="lg:col-span-7 order-1 lg:order-2 bg-[#F8FAFC] p-8 md:p-16 aspect-square md:aspect-[4/3] flex items-center justify-center relative border border-[#0C102A]/5 group slide-up-el" id="gama-mmpxmnv1-49">
-            <div class="absolute inset-0 bg-[#3A5683]/5 group-hover:bg-[#3A5683]/10 transition-colors duration-700" id="gama-mmpxmnv1-50"></div>
-            <div class="relative z-10 text-center" id="gama-mmpxmnv1-51">
-               <div class="text-4xl md:text-6xl font-light text-[#3A5683] mb-4" id="gama-mmpxmnv1-52">Σ(x + y)²</div>
-               <p class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8]" id="gama-mmpxmnv1-53">Logical Architectures</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 3: Physical Sciences -->
-      <section class="py-20 md:py-32 bg-[#F8FAFC] px-6 md:px-12 border-b border-[#0C102A]/5 overflow-hidden" id="gama-mmpxmnv1-54">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center" id="gama-mmpxmnv1-55">
-          <div class="lg:col-span-7 bg-white p-8 md:p-16 aspect-square md:aspect-[4/3] flex items-center justify-center relative border border-[#0C102A]/5 group slide-up-el" id="gama-mmpxmnv1-56">
-            <div class="absolute inset-0 bg-[#8AA4C8]/5 group-hover:bg-[#8AA4C8]/10 transition-colors duration-700" id="gama-mmpxmnv1-57"></div>
-            <div class="relative z-10 text-center" id="gama-mmpxmnv1-58">
-              <div class="text-3xl md:text-5xl lg:text-6xl font-light text-[#3A5683] mb-6 tracking-tighter" id="gama-mmpxmnv1-59">
-                F = <span class="font-extrabold text-[#0C102A]" id="gama-mmpxmnv1-60">ma</span>
-              </div>
-              <div class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8] border-t border-[#8AA4C8]/30 pt-4 inline-block" id="gama-mmpxmnv1-61">
-                Mechanics &amp; Chemical Bonds
-              </div>
-            </div>
-          </div>
-          <div class="lg:col-span-5 slide-up-el" id="gama-mmpxmnv1-62">
-            <div class="text-[6rem] md:text-[10rem] font-black text-[#0C102A]/5 leading-none mb-2 md:mb-4 -ml-2 tracking-tighter" id="gama-mmpxmnv1-63">02</div>
-            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tighter text-[#0C102A] uppercase mb-4 md:mb-6" id="gama-mmpxmnv1-64">
-              Physical <br id="gama-mmpxmnv1-65"><span class="font-light text-[#3A5683]" id="gama-mmpxmnv1-66">Sciences</span>
-            </h2>
-            <div class="inline-block px-3 py-1 bg-white border border-[#0C102A]/10 text-[10px] font-bold uppercase tracking-widest text-[#3A5683] mb-6 md:mb-8" id="gama-mmpxmnv1-67">
-              Physics &amp; Chemistry
-            </div>
-            <blockquote class="text-[#0C102A] font-semibold italic border-l-4 border-[#3A5683] pl-4 mb-8 text-sm md:text-base" id="gama-mmpxmnv1-68">
-              "Understanding the mechanics of the world, one reaction at a time."
-            </blockquote>
-            <p class="text-[#3A5683] text-sm md:text-base leading-relaxed mb-8 font-light max-w-lg" id="gama-mmpxmnv1-69">
-              Physical Science is a content-rich subject. At EMASA, our goal is true comprehension over rote memorisation. Once a learner understands *why* a principle works, applying the formula becomes second nature. We split our focus equally between Physics and Chemistry.
-            </p>
-            <ul class="space-y-4" id="gama-mmpxmnv1-70">
-              <li class="flex items-start gap-4 text-[#0C102A] text-sm font-semibold" id="gama-mmpxmnv1-71">
-                <div class="w-1.5 h-1.5 bg-[#3A5683] mt-1.5 rounded-full flex-shrink-0" id="gama-mmpxmnv1-72"></div>
-                <span id="gama-mmpxmnv1-73">Physics (Paper 1): Newton’s Laws, Work, Energy, and Electrodynamics.</span>
-              </li>
-              <li class="flex items-start gap-4 text-[#0C102A] text-sm font-semibold" id="gama-mmpxmnv1-74">
-                <div class="w-1.5 h-1.5 bg-[#3A5683] mt-1.5 rounded-full flex-shrink-0" id="gama-mmpxmnv1-75"></div>
-                <span id="gama-mmpxmnv1-76">Chemistry (Paper 2): Stoichiometry, Equilibrium, and Organic Chemistry.</span>
-              </li>
-              <li class="flex items-start gap-4 text-[#0C102A] text-sm font-semibold" id="gama-mmpxmnv1-77">
-                <div class="w-1.5 h-1.5 bg-[#3A5683] mt-1.5 rounded-full flex-shrink-0" id="gama-mmpxmnv1-78"></div>
-                <span id="gama-mmpxmnv1-79">Practical Application: Linking theory to exam-tested experiments.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 4: Matric Upgrades & Rewrites -->
-      <section class="py-20 md:py-32 bg-[#3A5683] px-6 md:px-12 text-white" id="gama-mmpxmnv1-80">
-        <div class="max-w-7xl mx-auto" id="gama-mmpxmnv1-81">
-          <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16 md:mb-24 gap-8 slide-up-el" id="gama-mmpxmnv1-82">
-            <div class="max-w-2xl" id="gama-mmpxmnv1-83">
-              <div class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-4 md:mb-6" id="gama-mmpxmnv1-84">
-                03 — Specialized Programme
-              </div>
-              <h2 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter uppercase mb-6 text-white leading-[0.9]" id="gama-mmpxmnv1-85">
-                Matric Upgrades <br id="gama-mmpxmnv1-86"><span class="font-light text-[#8AA4C8]" id="gama-mmpxmnv1-87">&amp; Rewrites</span>
-              </h2>
-              <blockquote class="text-white font-semibold italic border-l-4 border-[#8AA4C8] pl-4 mb-8 text-sm md:text-lg" id="gama-mmpxmnv1-88">
-                "Your first attempt doesn’t define your future. Let’s get you that Bachelor’s Pass."
-              </blockquote>
-              <p class="text-[#8AA4C8] text-sm md:text-base font-light leading-relaxed" id="gama-mmpxmnv1-89">
-                Did you miss out on your desired APS score? EMASA’s Matric Rewrite Programme is designed specifically to help you get into Engineering, Medicine, or Commerce. We identify exactly where you lost marks and fix those gaps.
-              </p>
-            </div>
-            <a href="#contact" class="inline-flex items-center justify-center gap-4 bg-[#0C102A] text-white px-8 md:px-10 py-4 md:py-5 rounded-none font-bold uppercase tracking-[0.15em] sm:tracking-[0.2em] hover:bg-white hover:text-[#0C102A] transition-colors duration-500 whitespace-nowrap text-xs md:text-sm" id="gama-mmpxmnv1-90">
-              Register for Rewrite
-            </a>
-          </div>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="gama-mmpxmnv1-91">
-            <div class="bg-[#0C102A]/40 border border-white/5 p-8 md:p-12 hover:bg-[#0C102A]/80 transition-colors duration-500 slide-up-el" id="gama-mmpxmnv1-92">
-              <h3 class="text-sm md:text-base font-bold mb-4 uppercase tracking-wider text-[#8AA4C8]" id="gama-mmpxmnv1-93">Targeted Gap Analysis</h3>
-              <p class="text-white/70 text-xs md:text-sm leading-relaxed font-light" id="gama-mmpxmnv1-94">We review previous exam performance to pinpoint weak areas, ensuring we don't waste time on mastered concepts.</p>
-            </div>
-            <div class="bg-[#0C102A]/40 border border-white/5 p-8 md:p-12 hover:bg-[#0C102A]/80 transition-colors duration-500 slide-up-el delay-100" id="gama-mmpxmnv1-95">
-              <h3 class="text-sm md:text-base font-bold mb-4 uppercase tracking-wider text-[#8AA4C8]" id="gama-mmpxmnv1-96">Past-Paper Drilling</h3>
-              <p class="text-white/70 text-xs md:text-sm leading-relaxed font-light" id="gama-mmpxmnv1-97">Extensive work through past NSC and IEB papers, focusing on tricky, high-mark questions examiners love.</p>
-            </div>
-            <div class="bg-[#0C102A]/40 border border-white/5 p-8 md:p-12 hover:bg-[#0C102A]/80 transition-colors duration-500 slide-up-el delay-200" id="gama-mmpxmnv1-98">
-              <h3 class="text-sm md:text-base font-bold mb-4 uppercase tracking-wider text-[#8AA4C8]" id="gama-mmpxmnv1-99">Exam Technique &amp; NBT</h3>
-              <p class="text-white/70 text-xs md:text-sm leading-relaxed font-light" id="gama-mmpxmnv1-100">Training on marking guidelines and memos so you know exactly what is required. NBT prep assistance included.</p>
-            </div>
-            <div class="bg-[#0C102A]/40 border border-white/5 p-8 md:p-12 hover:bg-[#0C102A]/80 transition-colors duration-500 slide-up-el delay-300" id="gama-mmpxmnv1-101">
-              <h3 class="text-sm md:text-base font-bold mb-4 uppercase tracking-wider text-[#8AA4C8]" id="gama-mmpxmnv1-102">Paced for Success</h3>
-              <p class="text-white/70 text-xs md:text-sm leading-relaxed font-light" id="gama-mmpxmnv1-103">Dedicated timelines for May/June or October/November rewrite sessions to ensure thorough syllabus coverage.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 5: How Our Classes Work -->
-      <section class="py-20 md:py-32 bg-[#0C102A] px-6 md:px-12 relative overflow-hidden" id="gama-mmpxmnv1-104">
-        <div class="absolute inset-0 z-0" id="gama-mmpxmnv1-105">
-          <div class="absolute bottom-[-30%] left-[-10%] w-[70vw] h-[70vw] bg-[#3A5683]/10 rounded-full blur-[120px]" id="gama-mmpxmnv1-106"></div>
-        </div>
-        <div class="max-w-7xl mx-auto relative z-10" id="gama-mmpxmnv1-107">
-          <div class="text-center mb-16 md:mb-24 slide-up-el" id="gama-mmpxmnv1-108">
-            <div class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-4 md:mb-6" id="gama-mmpxmnv1-109">
-              Our Methodology
-            </div>
-            <h2 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-light tracking-tighter text-white mb-6 md:mb-8 max-w-5xl mx-auto leading-[1.1]" id="gama-mmpxmnv1-110">
-              How Our <span class="font-extrabold" id="gama-mmpxmnv1-111">Classes Work.</span>
-            </h2>
-            <p class="text-[#8AA4C8] text-sm md:text-base max-w-2xl mx-auto font-light leading-relaxed" id="gama-mmpxmnv1-112">
-              At EMASA, we provide a supportive, mature learning environment focused entirely on results and personal academic growth.
-            </p>
-          </div>
-          
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto" id="gama-mmpxmnv1-113">
-            <div class="bg-white/5 border border-white/10 p-8 text-center hover:bg-white/10 transition-colors duration-300 slide-up-el" id="gama-mmpxmnv1-114">
-              <h4 class="text-white font-bold uppercase text-xs md:text-sm tracking-wider mb-3" id="gama-mmpxmnv1-115">CAPS &amp; IEB Aligned</h4>
-              <p class="text-white/50 text-xs leading-relaxed font-light" id="gama-mmpxmnv1-116">All content is strictly aligned with the South African curriculum standards for both public and private schooling.</p>
-            </div>
-            <div class="bg-[#3A5683]/20 border border-white/10 p-8 text-center hover:bg-[#3A5683]/40 transition-colors duration-300 slide-up-el delay-100" id="gama-mmpxmnv1-117">
-              <h4 class="text-white font-bold uppercase text-xs md:text-sm tracking-wider mb-3" id="gama-mmpxmnv1-118">Small Groups &amp; One-on-One</h4>
-              <p class="text-white/50 text-xs leading-relaxed font-light" id="gama-mmpxmnv1-119">Ensuring every learner gets personal attention to ask questions without feeling embarrassed or overlooked.</p>
-            </div>
-            <div class="bg-[#8AA4C8]/10 border border-white/10 p-8 text-center hover:bg-[#8AA4C8]/20 transition-colors duration-300 slide-up-el delay-200" id="gama-mmpxmnv1-120">
-              <h4 class="text-white font-bold uppercase text-xs md:text-sm tracking-wider mb-3" id="gama-mmpxmnv1-121">Continuous Assessment</h4>
-              <p class="text-white/50 text-xs leading-relaxed font-light" id="gama-mmpxmnv1-122">Regular mini-tests and progress reports so parents and learners know exactly where they stand before exams.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA Section -->
-      <section id="contact" class="cta-section py-20 md:py-32 px-6 md:px-12 bg-[#3A5683] text-center flex flex-col items-center justify-center">
-        <h2 class="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tighter text-white max-w-4xl mb-6 md:mb-8" id="gama-mmpxmnv1-123">
-          Ready to Boost Your Marks?
-        </h2>
-        <p class="text-[#8AA4C8] text-base md:text-lg max-w-2xl mb-10 md:mb-12 font-light px-4" id="gama-mmpxmnv1-124">
-          Whether you are aiming for a distinction, struggling to pass, or ready to rewrite and upgrade your Matric results, EMASA is here to guide you every step of the way.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4" id="gama-mmpxmnv1-125">
-          <a href="contact.html" class="bg-[#0C102A] text-white px-8 md:px-12 py-4 md:py-5 rounded-none font-bold text-sm md:text-base uppercase tracking-widest hover:bg-white hover:text-[#0C102A] transition-colors duration-300" id="gama-mmpxmnv1-126">
-            Enrol for Maths &amp; Science
-          </a>
-          <a href="contact.html" class="bg-white text-[#0C102A] px-8 md:px-12 py-4 md:py-5 rounded-none font-bold text-sm md:text-base uppercase tracking-widest hover:bg-[#0C102A] hover:text-white transition-colors duration-300" id="gama-mmpxmnv1-127">
-            Register for Matric Rewrite
-          </a>
-        </div>
-      </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="bg-[#0C102A] text-white pt-16 md:pt-24 pb-10 md:pb-12 px-6 md:px-12" id="gama-mmpxmnv1-128">
-      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 border-b border-white/10 pb-12 md:pb-16" id="gama-mmpxmnv1-129">
-        <div class="max-w-sm" id="gama-mmpxmnv1-130">
-          <div class="text-white font-extrabold text-2xl md:text-3xl tracking-tighter uppercase mb-4 md:mb-6" id="gama-mmpxmnv1-131">
-            EMASA<span class="text-[#8AA4C8]" id="gama-mmpxmnv1-132">.</span>
-          </div>
-          <p class="text-white/50 text-sm leading-relaxed" id="gama-mmpxmnv1-133">
-            South Africa's premier academic institution for Mathematics and Physical Sciences. Dedicated to expert CAPS/IEB tuition and Matric success.
-          </p>
-        </div>
-        
-        <div class="w-full md:w-auto" id="gama-mmpxmnv1-134">
-          <h4 class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-6" id="gama-mmpxmnv1-135">Directory</h4>
-          <nav class="flex flex-col space-y-4 text-sm font-semibold" id="gama-mmpxmnv1-136">
-            <a href="index.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxmnv1-137">Home</a>
-            <a href="about.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxmnv1-138">About Us</a>
-            <a href="subjects.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxmnv1-139">Subjects</a>
-            <a href="contact.html" class="text-white hover:text-accent transition-colors" id="gama-mmpxmnv1-141">Contact Us</a>
-          </nav>
-        </div>
-      </div>
-      
-      <div class="max-w-7xl mx-auto mt-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left text-[10px] md:text-xs text-white/30 uppercase tracking-widest" id="gama-mmpxmnv1-142">
-        <p id="gama-mmpxmnv1-143">© 2024 EMASA (Eben Math and Science Academy). All rights reserved.</p>
-        <p class="mt-4 md:mt-0" id="gama-mmpxmnv1-144">CAPS &amp; IEB Excellence</p>
-      </div>
-    </footer>
-    
-    <!-- Animation Scripts -->
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        gsap.registerPlugin(ScrollTrigger);
-        
-        // Mobile Menu Setup
-        const menuTl = gsap.timeline({ paused: true, reversed: true });
-        menuTl.to('#mobile-menu', {
-          display: 'flex',
-          clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
-          duration: 0.8,
-          ease: 'power4.inOut'
-        }).fromTo('.mobile-link', {
-          y: 30,
-          opacity: 0
-        }, {
-          y: 0,
-          opacity: 1,
-          stagger: 0.1,
-          duration: 0.5,
-          ease: 'power3.out'
-        }, '-=0.4');
-        
-        const btn = document.getElementById('mobile-menu-btn');
-        const hamburgerIcon = document.getElementById('hamburger-icon');
-        const closeIcon = document.getElementById('close-icon');
-        
-        btn.addEventListener('click', () => {
-          if (menuTl.reversed()) {
-            menuTl.play();
-            hamburgerIcon.classList.add('hidden');
-            closeIcon.classList.remove('hidden');
-          } else {
-            menuTl.reverse();
-            hamburgerIcon.classList.remove('hidden');
-            closeIcon.classList.add('hidden');
-          }
-        });
-
-        // Page Header Animation
-        gsap.from('.animate-fade-in-up > *', {
-          y: 40,
-          opacity: 0,
-          stagger: 0.15,
-          duration: 1,
-          ease: 'power3.out',
-          delay: 0.2
-        });
-
-        // Scroll Animations for Subpage Sections
-        gsap.utils.toArray('.slide-up-el').forEach(el => {
-          gsap.from(el, {
-            scrollTrigger: {
-              trigger: el,
-              start: 'top 85%',
-            },
-            y: 50,
-            opacity: 0,
-            duration: 0.8,
-            ease: 'power3.out'
-          });
-        });
-        
-        // CTA Animation
-        gsap.from('.cta-section > *', {
-          scrollTrigger: { trigger: '.cta-section', start: 'top 80%' },
-          y: 40,
-          opacity: 0,
-          stagger: 0.15,
-          duration: 0.8,
-          ease: 'power3.out'
-        });
-        
-        // Footer Animation
-        gsap.from('footer > div', {
-          scrollTrigger: { trigger: 'footer', start: 'top 90%' },
-          y: 30,
-          opacity: 0,
-          stagger: 0.2,
-          duration: 0.8,
-          ease: 'power3.out'
-        });
-      });
-    </script>
+    }
+  </script>
   
+  <!-- Custom Styles -->
+  <style>
+    .text-accent { color: #8AA4C8; }
+    .hover\:text-accent:hover { color: #8AA4C8; }
+    
+    .workbook-grid {
+      background-image: linear-gradient(to right, rgba(58, 86, 131, 0.07) 1px, transparent 1px), linear-gradient(to bottom, rgba(58, 86, 131, 0.07) 1px, transparent 1px);
+      background-size: 25px 25px;
+    }
+    .workbook-grid-dark {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 30px 30px;
+    }
+    .workbook-margin { border-left: 2px solid rgba(239, 68, 68, 0.2); }
+    .math-corner {
+      background-image: radial-gradient(circle at 1px 1px, rgba(58, 86, 131, 0.1) 1px, transparent 0);
+      background-size: 20px 20px;
+    }
+  </style>
+  
+  <!-- GSAP Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-[#F8FAFC] text-[#0C102A] font-sans antialiased selection:bg-[#3A5683] selection:text-white overflow-x-hidden">
+
+  <!-- Header -->
+  <header class="sticky top-0 w-full z-[100] px-6 md:px-12 py-3 md:py-4 flex justify-between items-center bg-[#0C102A] backdrop-blur-md border-b border-white/10 shadow-sm workbook-grid" id="main-header">
+    <div class="relative z-50" id="gama-mnd2615h-0">
+      <a href="index.html" class="flex items-center" id="gama-mnd2615h-1">
+        <img src="https://res.cloudinary.com/db7ddka03/image/upload/v1774530176/Emasa_Main_Logo_zjm58l.png" alt="Eben Maths and Science Academy Logo" class="h-16 md:h-20 w-auto" style="filter: brightness(0) invert(1);" id="gama-mnd2615h-2">
+      </a>
+    </div>
+    <nav class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-wider" id="desktop-nav">
+      <a href="index.html" class="text-white hover:text-gray-300 transition-colors" id="gama-mnd2615h-3">Home</a>
+      <a href="about.html" class="text-white hover:text-gray-300 transition-colors" id="gama-mnd2615h-4">About Us</a>
+      <a href="subjects.html" class="text-white hover:text-gray-300 transition-colors" id="gama-mnd2615h-5">Our Subjects</a>
+      <a href="contact.html" class="text-white hover:text-gray-300 transition-colors" id="gama-mnd2615h-6">Contact Us</a>
+    </nav>
+    <button id="mobile-menu-btn" class="block md:hidden text-white focus:outline-none z-50 transition-transform" aria-label="Toggle mobile menu">
+      <svg id="hamburger-icon" class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" id="gama-mnd2615h-7"></path>
+      </svg>
+      <svg id="close-icon" class="w-8 h-8 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" id="gama-mnd2615h-8"></path>
+      </svg>
+    </button>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-[#0C102A] z-[90] flex-col items-center justify-center space-y-8 text-lg font-bold uppercase tracking-widest" style="display:none; clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);">
+    <a href="index.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mnd2615h-9">Home</a>
+    <a href="about.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mnd2615h-10">About Us</a>
+    <a href="subjects.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mnd2615h-11">Our Subjects</a>
+    <a href="contact.html" class="mobile-link text-white hover:text-accent transition-colors" id="gama-mnd2615h-12">Contact Us</a>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="pt-12 pb-20 md:pt-20 md:pb-32 px-6 md:px-12 bg-[#0C102A] text-white relative overflow-hidden workbook-grid-dark" id="gama-mnd2615h-13">
+      <div class="max-w-7xl mx-auto relative z-10 flex flex-col md:flex-row gap-12 items-center" id="gama-mnd2615h-14">
+         <div class="w-full md:w-4/5 workbook-margin pl-6 md:pl-10" id="gama-mnd2615h-15">
+            <nav aria-label="Breadcrumb" class="hero-text flex items-center space-x-2 text-[#8AA4C8] text-xs font-bold uppercase tracking-widest mb-6" id="gama-mnd2615h-16">
+              <a href="index.html" class="hover:text-white transition-colors" id="gama-mnd2615h-17">Home</a>
+              <span aria-hidden="true" id="gama-mnd2615h-18">/</span>
+              <span class="text-white" id="gama-mnd2615h-19">Our Subjects</span>
+            </nav>
+            <h1 class="hero-text text-5xl md:text-7xl lg:text-[7vw] font-extrabold tracking-tighter uppercase mb-2 leading-[0.9]" id="gama-mnd2615h-20">
+              Academic
+            </h1>
+            <h2 class="hero-text text-4xl md:text-6xl lg:text-[6vw] text-[#3A5683] font-light tracking-tighter uppercase mb-8 leading-[0.9]" id="gama-mnd2615h-21">
+              Excellence Redefined.
+            </h2>
+            <p class="hero-text text-[#8AA4C8] text-lg md:text-xl max-w-2xl font-light leading-relaxed" id="gama-mnd2615h-22">
+              From Grade 1 foundations to Grade 12 distinctions, EMASA offers expert, CAPS and IEB-aligned tuition to unlock every student's potential.
+            </p>
+         </div>
+      </div>
+    </section>
+
+    <!-- Section 01: High School Mathematics -->
+    <section class="py-20 md:py-32 bg-[#F8FAFC] px-6 md:px-12 border-b border-[#0C102A]/5 workbook-grid" id="gama-mnd2615h-23">
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24 items-center" id="gama-mnd2615h-24">
+        <div class="w-full lg:w-1/2 hepa-text workbook-margin pl-6 md:pl-10" id="gama-mnd2615h-25">
+          <div class="text-[5rem] md:text-[8rem] font-black text-[#0C102A]/5 leading-none mb-2 md:mb-4 tracking-tighter -ml-1" id="gama-mnd2615h-26">01</div>
+          <h2 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter text-[#0C102A] uppercase mb-2" id="gama-mnd2615h-27">High School</h2>
+          <h3 class="text-3xl sm:text-4xl md:text-6xl text-[#3A5683] font-light tracking-tighter uppercase mb-6" id="gama-mnd2615h-28">Mathematics</h3>
+          <div class="inline-block px-3 py-1 bg-white border border-[#0C102A]/10 text-[10px] font-bold uppercase tracking-widest text-[#3A5683] mb-8" id="gama-mnd2615h-29">Grades 8 — 12</div>
+          <p class="text-[#3A5683] text-sm md:text-base leading-relaxed mb-8 font-light italic" id="gama-mnd2615h-30">
+            "From foundational arithmetic to advanced calculus, we build strong problem-solving skills and mathematical fluency that last a lifetime."
+          </p>
+          <ul class="space-y-4" id="gama-mnd2615h-31">
+            <li class="flex items-start gap-4 text-[#0C102A] text-sm md:text-base font-medium" id="gama-mnd2615h-32">
+              <div class="w-2 h-2 bg-[#3A5683] mt-2 flex-shrink-0" id="gama-mnd2615h-33"></div>
+              <span id="gama-mnd2615h-34">Building logic and abstract reasoning in the Junior Phase (Grades 8-9).</span>
+            </li>
+            <li class="flex items-start gap-4 text-[#0C102A] text-sm md:text-base font-medium" id="gama-mnd2615h-35">
+              <div class="w-2 h-2 bg-[#3A5683] mt-2 flex-shrink-0" id="gama-mnd2615h-36"></div>
+              <span id="gama-mnd2615h-37">Advanced Functions, Trig, and Calculus mastery for Matric success.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full lg:w-1/2 bento-box" id="gama-mnd2615h-38">
+          <div class="bg-white p-12 md:p-20 aspect-square flex flex-col items-center justify-center relative border border-[#0C102A]/10 math-corner group" id="gama-mnd2615h-39">
+            <div class="absolute inset-0 bg-[#3A5683]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" id="gama-mnd2615h-40"></div>
+            <div class="relative z-10 text-center" id="gama-mnd2615h-41">
+               <div class="text-5xl md:text-7xl font-light text-[#3A5683] mb-6 font-serif" id="gama-mnd2615h-42">Σ(x + y)²</div>
+               <p class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8] border-t border-[#0C102A]/10 pt-4 inline-block" id="gama-mnd2615h-43">Mathematical Fluency</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: Physical Sciences -->
+    <section class="py-20 md:py-32 bg-white px-6 md:px-12 border-b border-[#0C102A]/5 workbook-grid" id="gama-mnd2615h-44">
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse gap-16 lg:gap-24 items-center" id="gama-mnd2615h-45">
+        <div class="w-full lg:w-1/2 hepa-text workbook-margin pl-6 md:pl-10" id="gama-mnd2615h-46">
+          <div class="text-[5rem] md:text-[8rem] font-black text-[#0C102A]/5 leading-none mb-2 md:mb-4 tracking-tighter -ml-1" id="gama-mnd2615h-47">02</div>
+          <h2 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter text-[#0C102A] uppercase mb-2" id="gama-mnd2615h-48">Physical</h2>
+          <h3 class="text-3xl sm:text-4xl md:text-6xl text-[#3A5683] font-light tracking-tighter uppercase mb-6" id="gama-mnd2615h-49">Sciences</h3>
+          <div class="inline-block px-3 py-1 bg-[#F8FAFC] border border-[#0C102A]/10 text-[10px] font-bold uppercase tracking-widest text-[#3A5683] mb-8" id="gama-mnd2615h-50">Grades 10 — 12</div>
+          <p class="text-[#3A5683] text-sm md:text-base leading-relaxed mb-8 font-light italic" id="gama-mnd2615h-51">
+            "We demystify the physical world. Through practical examples and interactive teaching, we help students grasp complex forces, reactions, and mechanics."
+          </p>
+          <ul class="space-y-4" id="gama-mnd2615h-52">
+            <li class="flex items-start gap-4 text-[#0C102A] text-sm md:text-base font-medium" id="gama-mnd2615h-53">
+              <div class="w-2 h-2 bg-[#3A5683] mt-2 flex-shrink-0" id="gama-mnd2615h-54"></div>
+              <span id="gama-mnd2615h-55">Physics: Newton's Laws, Work, Energy, and Electrodynamics.</span>
+            </li>
+            <li class="flex items-start gap-4 text-[#0C102A] text-sm md:text-base font-medium" id="gama-mnd2615h-56">
+              <div class="w-2 h-2 bg-[#3A5683] mt-2 flex-shrink-0" id="gama-mnd2615h-57"></div>
+              <span id="gama-mnd2615h-58">Chemistry: Stoichiometry, Equilibrium, and Organic Bonds.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full lg:w-1/2 bento-box" id="gama-mnd2615h-59">
+          <div class="bg-[#F8FAFC] p-12 md:p-20 aspect-square flex flex-col items-center justify-center relative border border-[#0C102A]/10 math-corner group" id="gama-mnd2615h-60">
+            <div class="absolute inset-0 bg-[#8AA4C8]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" id="gama-mnd2615h-61"></div>
+            <div class="relative z-10 text-center text-4xl md:text-7xl font-light text-[#3A5683] font-serif" id="gama-mnd2615h-62">
+              F = <span class="font-extrabold text-[#0C102A]" id="gama-mnd2615h-63">ma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 03: Natural Sciences -->
+    <section class="py-20 md:py-32 bg-[#F8FAFC] px-6 md:px-12 border-b border-[#0C102A]/5 workbook-grid" id="gama-mnd2615h-64">
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 lg:gap-24 items-center" id="gama-mnd2615h-65">
+        <div class="w-full lg:w-1/2 hepa-text workbook-margin pl-6 md:pl-10" id="gama-mnd2615h-66">
+          <div class="text-[5rem] md:text-[8rem] font-black text-[#0C102A]/5 leading-none mb-2 md:mb-4 tracking-tighter -ml-1" id="gama-mnd2615h-67">03</div>
+          <h2 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter text-[#0C102A] uppercase mb-2" id="gama-mnd2615h-68">Natural</h2>
+          <h3 class="text-3xl sm:text-4xl md:text-6xl text-[#3A5683] font-light tracking-tighter uppercase mb-6" id="gama-mnd2615h-69">Sciences</h3>
+          <div class="inline-block px-3 py-1 bg-white border border-[#0C102A]/10 text-[10px] font-bold uppercase tracking-widest text-[#3A5683] mb-8" id="gama-mnd2615h-70">Grades 8 — 9</div>
+          <p class="text-[#3A5683] text-sm md:text-base leading-relaxed mb-8 font-light italic" id="gama-mnd2615h-71">
+            "Specifically designed for Grade 8-9, we provide a comprehensive introduction to the fundamental concepts of biological and physical sciences."
+          </p>
+          <div class="bg-white/50 p-6 border border-[#3A5683]/10" id="gama-mnd2615h-72">
+            <p class="text-xs md:text-sm text-[#0C102A] leading-relaxed font-medium" id="gama-mnd2615h-73">
+              This bridging subject is critical for students deciding between Life Sciences and Physical Sciences for the FET phase. We ensure a deep understanding of the scientific method.
+            </p>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/2 bento-box" id="gama-mnd2615h-74">
+          <div class="bg-white p-12 md:p-20 aspect-square flex flex-col items-center justify-center relative border border-[#0C102A]/10 math-corner group" id="gama-mnd2615h-75">
+            <div class="relative z-10 text-center" id="gama-mnd2615h-76">
+               <svg class="w-24 h-24 text-[#3A5683]/40 mb-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="gama-mnd2615h-77">
+                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.829c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" id="gama-mnd2615h-78"></path>
+               </svg>
+               <p class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8]" id="gama-mnd2615h-79">Fundamental Concepts</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Primary School Mathematics -->
+    <section class="py-20 md:py-32 bg-white px-6 md:px-12 border-b border-[#0C102A]/5 workbook-grid" id="gama-mnd2615h-80">
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse gap-16 lg:gap-24 items-center" id="gama-mnd2615h-81">
+        <div class="w-full lg:w-1/2 hepa-text workbook-margin pl-6 md:pl-10" id="gama-mnd2615h-82">
+          <div class="text-[5rem] md:text-[8rem] font-black text-[#0C102A]/5 leading-none mb-2 md:mb-4 tracking-tighter -ml-1" id="gama-mnd2615h-83">04</div>
+          <h2 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter text-[#0C102A] uppercase mb-2" id="gama-mnd2615h-84">Primary School</h2>
+          <h3 class="text-3xl sm:text-4xl md:text-6xl text-[#3A5683] font-light tracking-tighter uppercase mb-6" id="gama-mnd2615h-85">Mathematics</h3>
+          <div class="inline-block px-3 py-1 bg-[#F8FAFC] border border-[#0C102A]/10 text-[10px] font-bold uppercase tracking-widest text-[#3A5683] mb-8" id="gama-mnd2615h-86">Grades 1 — 7</div>
+          <p class="text-[#3A5683] text-sm md:text-base leading-relaxed mb-8 font-light italic" id="gama-mnd2615h-87">
+            "Building essential mathematical foundations during the critical early years, ensuring students are prepared for lifelong academic success."
+          </p>
+          <ul class="space-y-4" id="gama-mnd2615h-88">
+            <li class="flex items-start gap-4 text-[#0C102A] text-sm md:text-base font-medium" id="gama-mnd2615h-89">
+              <div class="w-2 h-2 bg-[#3A5683] mt-2 flex-shrink-0" id="gama-mnd2615h-90"></div>
+              <span id="gama-mnd2615h-91">Arithmetic mastery and numerical confidence.</span>
+            </li>
+            <li class="flex items-start gap-4 text-[#0C102A] text-sm md:text-base font-medium" id="gama-mnd2615h-92">
+              <div class="w-2 h-2 bg-[#3A5683] mt-2 flex-shrink-0" id="gama-mnd2615h-93"></div>
+              <span id="gama-mnd2615h-94">Transition support for Senior Primary to High School.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full lg:w-1/2 bento-box" id="gama-mnd2615h-95">
+          <div class="bg-[#F8FAFC] p-12 md:p-20 aspect-square flex flex-col items-center justify-center relative border border-[#0C102A]/10 math-corner group" id="gama-mnd2615h-96">
+            <div class="relative z-10 text-center" id="gama-mnd2615h-97">
+               <div class="text-7xl md:text-9xl font-black text-[#3A5683]/10 mb-2" id="gama-mnd2615h-98">123</div>
+               <p class="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-[#8AA4C8]" id="gama-mnd2615h-99">Early Foundations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 05: Matric Upgrades -->
+    <section class="py-20 md:py-32 bg-[#0C102A] text-white px-6 md:px-12 workbook-grid-dark" id="gama-mnd2615h-100">
+      <div class="max-w-7xl mx-auto" id="gama-mnd2615h-101">
+        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16 md:mb-24 gap-8 hepa-text" id="gama-mnd2615h-102">
+          <div class="max-w-2xl workbook-margin pl-6 md:pl-10" id="gama-mnd2615h-103">
+            <div class="text-[5rem] md:text-[8rem] font-black text-white/5 leading-none mb-2 md:mb-4 tracking-tighter -ml-1" id="gama-mnd2615h-104">05</div>
+            <h2 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter uppercase mb-2" id="gama-mnd2615h-105">Matric Upgrades</h2>
+            <h3 class="text-3xl sm:text-4xl md:text-6xl font-light tracking-tighter text-[#8AA4C8] uppercase mb-8" id="gama-mnd2615h-106">&amp; Rewrites</h3>
+            <p class="text-[#8AA4C8] text-sm md:text-base font-light leading-relaxed" id="gama-mnd2615h-107">
+              Did you miss out on your desired APS score? Our Matric Rewrite Programme helps you get into Engineering, Medicine, or Commerce by fixing specific academic gaps.
+            </p>
+          </div>
+          <a href="contact.html" class="bg-white text-[#0C102A] px-8 py-4 font-bold uppercase tracking-widest hover:bg-[#8AA4C8] transition-all text-xs md:text-sm" id="gama-mnd2615h-108">
+            Register for Rewrite
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 06: Supplementary Support -->
+    <section class="py-20 md:py-32 bg-[#F8FAFC] px-6 md:px-12 workbook-grid border-b border-[#0C102A]/5" id="gama-mnd2615h-109">
+      <div class="max-w-7xl mx-auto" id="gama-mnd2615h-110">
+        <div class="text-center mb-16 md:mb-24 hepa-text" id="gama-mnd2615h-111">
+          <h2 class="text-xs md:text-sm font-bold uppercase tracking-widest text-[#8AA4C8] mb-4" id="gama-mnd2615h-112">Value Added Services</h2>
+          <h3 class="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tighter uppercase mb-2 text-[#0C102A]" id="gama-mnd2615h-113">Additional Support</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gama-selected-locked" id="gama-mnd2615h-114">
+          <section class="stat-item bg-white border border-[#0C102A]/10 p-8 hover:shadow-xl transition-all math-corner" id="gama-mnd2615h-115" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+            <h4 class="text-sm font-bold uppercase tracking-widest text-[#3A5683] mb-4" id="gama-mnd2615h-116">Afrikaans &amp; English</h4>
+            <p class="text-[#3A5683] text-xs md:text-sm font-light" id="gama-mnd2615h-117">Language proficiency support for students looking to excel in their primary and secondary language subjects.</p>
+          </section>
+          <section class="stat-item bg-white border border-[#0C102A]/10 p-8 hover:shadow-xl transition-all math-corner" id="gama-mnd2615h-118" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+            <h4 class="text-sm font-bold uppercase tracking-widest text-[#3A5683] mb-4" id="gama-mnd2615h-119">Maths NBT Prep</h4>
+            <p class="text-[#3A5683] text-xs md:text-sm font-light" id="gama-mnd2615h-120">Specialised National Benchmark Test preparation for existing students aiming for university entrance.</p>
+            <span class="inline-block mt-4 text-[10px] font-bold text-[#8AA4C8] uppercase tracking-widest" id="gama-mnd2615h-121">*Existing Students Only</span>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 md:py-32 px-6 md:px-12 bg-[#3A5683] text-center flex flex-col items-center justify-center workbook-grid-dark hepa-text" id="gama-mnd2615h-125">
+      <h2 class="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tighter text-white max-w-4xl mb-8 uppercase" id="gama-mnd2615h-126">Ready to Boost Your Marks?</h2>
+      <div class="flex flex-col sm:flex-row gap-4" id="gama-mnd2615h-127">
+        <a href="contact.html" class="bg-[#0C102A] text-white px-12 py-5 font-bold uppercase tracking-widest hover:bg-white hover:text-[#0C102A] transition-all shadow-xl text-sm" id="gama-mnd2615h-128">
+          Enrol Today
+        </a>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-white text-slate-900 pt-16 pb-12 px-6 md:px-12 border-t border-slate-200" id="gama-mnd2615h-129">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 border-b border-slate-100 pb-12" id="gama-mnd2615h-130">
+      <div id="gama-mnd2615h-131">
+        <h4 class="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 mb-6" id="gama-mnd2615h-132">Directory</h4>
+        <nav class="flex flex-col space-y-4 text-sm font-semibold" id="gama-mnd2615h-133">
+          <a href="index.html" class="text-slate-800 hover:text-accent" id="gama-mnd2615h-134">Home</a>
+          <a href="about.html" class="text-slate-800 hover:text-accent" id="gama-mnd2615h-135">About Us</a>
+          <a href="subjects.html" class="text-slate-800 hover:text-accent" id="gama-mnd2615h-136">Subjects</a>
+          <a href="contact.html" class="text-slate-800 hover:text-accent" id="gama-mnd2615h-137">Contact Us</a>
+        </nav>
+      </div>
+      <div class="max-w-sm md:text-right" id="gama-mnd2615h-138">
+        <img src="https://res.cloudinary.com/db7ddka03/image/upload/v1774530176/Emasa_Main_Logo_zjm58l.png" alt="EMASA Logo" class="h-20 w-auto md:ml-auto mb-6" id="gama-mnd2615h-139">
+        <p class="text-slate-600 text-sm" id="gama-mnd2615h-140">An elite academic institution dedicated to simplifying mathematics and sciences.</p>
+      </div>
+    </div>
+    <p class="text-center mt-8 text-xs text-slate-400 uppercase tracking-widest" id="gama-mnd2615h-141">© 2026 Eben Maths and Science Academy (EMASA). All rights reserved.</p>
+  </footer>
+  
+  <!-- Scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      gsap.registerPlugin(ScrollTrigger);
+      
+      const menuTl = gsap.timeline({ paused: true, reversed: true });
+      menuTl.to('#mobile-menu', { display: 'flex', clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', duration: 0.6 });
+
+      document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+        if (menuTl.reversed()) { menuTl.play(); } else { menuTl.reverse(); }
+      });
+
+      gsap.from('.hero-text', { y: 40, opacity: 0, stagger: 0.15, duration: 1, ease: 'power4.out' });
+      gsap.utils.toArray('.bento-box, .stat-item, .hepa-text').forEach(el => {
+        gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 85%' }, y: 40, opacity: 0, duration: 0.8 });
+      });
+    });
+  </script>
 </body></html>
