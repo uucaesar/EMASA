@@ -207,103 +207,123 @@
         </div>
 
         <div class="lg:col-span-7 bento-box" id="gama-mncxse0x-62">
-          <form class="space-y-12 flex flex-col bg-[#F8FAFC] p-8 md:p-12 border border-gray-100 relative overflow-hidden math-corner" onsubmit="event.preventDefault();" id="gama-mncxse0x-63">
+          <form class="space-y-12 flex flex-col bg-[#F8FAFC] p-8 md:p-12 border border-gray-100 relative overflow-hidden math-corner gama-selected-locked" onsubmit="handleSubmit(event)" id="gama-mncxse0x-63">
             
-            <!-- Your Details -->
-            <section class="space-y-10" id="gama-mncxse0x-64">
-              <h3 class="text-xs font-bold uppercase tracking-widest text-[#0C102A] border-l-4 border-[#3A5683] pl-4" id="gama-mncxse0x-65">Your Details</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8" id="gama-mncxse0x-66">
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-67">
-                  <label for="parent_name" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-68">Parent/Guardian Name</label>
-                  <input type="text" id="parent_name" name="parent_name" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter full name" required="">
+            <div id="form-fields" class="space-y-12">
+              <!-- Your Details -->
+              <section class="space-y-10" id="gama-mncxse0x-64">
+                <h3 class="text-xs font-bold uppercase tracking-widest text-[#0C102A] border-l-4 border-[#3A5683] pl-4" id="gama-mncxse0x-65">Your Details</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8" id="gama-mncxse0x-66">
+                  <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-67">
+                    <label for="parent_name" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-68">Parent/Guardian Name</label>
+                    <input type="text" id="parent_name" name="parent_name" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter full name" required="">
+                  </div>
+                  <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-70">
+                    <label for="learner_name" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-71">Learner Name</label>
+                    <input type="text" id="learner_name" name="learner_name" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter learner's name" required="">
+                  </div>
+                  <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-73">
+                    <label for="contact_number" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-74">Contact Number</label>
+                    <input type="tel" id="contact_number" name="contact_number" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="e.g. 082 123 4567" required="">
+                  </div>
+                  <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-76">
+                    <label for="email_address" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-77">Email Address</label>
+                    <input type="email" id="email_address" name="email_address" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter email address" required="">
+                  </div>
+                  <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group md:col-span-2 transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-79">
+                    <label for="residential_area" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-80">Residential Area</label>
+                    <input type="text" id="residential_area" name="residential_area" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="e.g. Nelspruit, White River, Lekazi, Karino" required="">
+                  </div>
                 </div>
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-70">
-                  <label for="learner_name" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-71">Learner Name</label>
-                  <input type="text" id="learner_name" name="learner_name" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter learner's name" required="">
-                </div>
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-73">
-                  <label for="contact_number" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-74">Contact Number</label>
-                  <input type="tel" id="contact_number" name="contact_number" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="e.g. 082 123 4567" required="">
-                </div>
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-76">
-                  <label for="email_address" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-77">Email Address</label>
-                  <input type="email" id="email_address" name="email_address" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="Enter email address" required="">
-                </div>
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group md:col-span-2 transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-79">
-                  <label for="residential_area" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-80">Residential Area</label>
-                  <input type="text" id="residential_area" name="residential_area" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="e.g. Nelspruit, White River, Lekazi, Karino" required="">
-                </div>
-              </div>
-            </section>
+              </section>
 
-            <!-- Academic Profile -->
-            <section class="space-y-10 pt-6" id="gama-mncxse0x-82">
-              <h3 class="text-xs font-bold uppercase tracking-widest text-[#0C102A] border-l-4 border-[#3A5683] pl-4" id="gama-mncxse0x-83">Learner's Academic Profile</h3>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8" id="gama-mncxse0x-84">
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-85">
-                  <label for="grade-select" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-86">Current Grade</label>
-                  <select id="grade-select" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium focus:ring-0 cursor-pointer appearance-none" required="" onchange="filterSubjects()">
-                    <option value="" disabled="" selected="" class="text-[#0C102A]/20" id="gama-mnd1x4rs-0">Select Grade</option>
-                    <option value="primary" id="gama-mnd1x4rs-1">Primary School</option>
-                    <option value="8" id="gama-mnd1x4rs-2">Grade 8</option>
-                    <option value="9" id="gama-mnd1x4rs-3">Grade 9</option>
-                    <option value="10" id="gama-mnd1x4rs-4">Grade 10</option>
-                    <option value="11" id="gama-mnd1x4rs-5">Grade 11</option>
-                    <option value="12" id="gama-mnd1x4rs-6">Grade 12</option>
-                    <option value="rewrite" id="gama-mnd1x4rs-7">Matric Rewrite</option>
-                  </select>
+              <!-- Academic Profile -->
+              <section class="space-y-10 pt-6" id="gama-mncxse0x-82">
+                <h3 class="text-xs font-bold uppercase tracking-widest text-[#0C102A] border-l-4 border-[#3A5683] pl-4" id="gama-mncxse0x-83">Learner's Academic Profile</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-8" id="gama-mncxse0x-84">
+                  <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-85">
+                    <label for="grade-select" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-86">Current Grade</label>
+                    <select id="grade-select" name="grade" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium focus:ring-0 cursor-pointer appearance-none" required="" onchange="filterSubjects()">
+                      <option value="" disabled="" selected="" class="text-[#0C102A]/20" id="gama-mnd1x4rs-0">Select Grade</option>
+                      <option value="primary" id="gama-mnd1x4rs-1">Primary School</option>
+                      <option value="8" id="gama-mnd1x4rs-2">Grade 8</option>
+                      <option value="9" id="gama-mnd1x4rs-3">Grade 9</option>
+                      <option value="10" id="gama-mnd1x4rs-4">Grade 10</option>
+                      <option value="11" id="gama-mnd1x4rs-5">Grade 11</option>
+                      <option value="12" id="gama-mnd1x4rs-6">Grade 12</option>
+                      <option value="rewrite" id="gama-mnd1x4rs-7">Matric Rewrite</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-95">
+                    <label for="current_school" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-96">Learner's Current School</label>
+                    <input type="text" id="current_school" name="current_school" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="School Name">
+                  </div>
                 </div>
-                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-95">
-                  <label for="current_school" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-96">Learner's Current School</label>
-                  <input type="text" id="current_school" name="current_school" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="School Name">
+                
+                <div class="flex flex-col gap-6" id="gama-mncxse0x-98">
+                  <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2" id="gama-mncxse0x-99">Subject(s) Requiring Assistance</label>
+                  <p id="subject-notice" class="text-xs text-[#3A5683] font-medium -mt-4 hidden italic">Please select a grade first to see available subjects.</p>
+                  <div class="flex flex-wrap gap-8" id="subject-container">
+                    <label class="flex items-center space-x-3 cursor-pointer" id="cont-math">
+                      <input type="checkbox" name="subjects" value="mathematics" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-8">
+                      <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-9">Mathematics</span>
+                    </label>
+                    <label class="hidden items-center space-x-3 cursor-pointer" id="cont-physical-sciences">
+                      <input type="checkbox" name="subjects" value="physical-sciences" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-10">
+                      <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-11">Physical Sciences</span>
+                    </label>
+                    <label class="hidden items-center space-x-3 cursor-pointer" id="cont-afrikaans">
+                      <input type="checkbox" name="subjects" value="afrikaans" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-12">
+                      <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-13">Afrikaans</span>
+                    </label>
+                    <label class="hidden items-center space-x-3 cursor-pointer" id="cont-english">
+                      <input type="checkbox" name="subjects" value="english" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-14">
+                      <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-15">English</span>
+                    </label>
+                    <label class="hidden items-center space-x-3 cursor-pointer" id="cont-natural-sciences">
+                      <input type="checkbox" name="subjects" value="natural-sciences" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-16">
+                      <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-17">Natural Sciences</span>
+                    </label>
+                  </div>
                 </div>
-              </div>
-              
-              <div class="flex flex-col gap-6" id="gama-mncxse0x-98">
-                <label class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2" id="gama-mncxse0x-99">Subject(s) Requiring Assistance</label>
-                <p id="subject-notice" class="text-xs text-[#3A5683] font-medium -mt-4 hidden italic">Please select a grade first to see available subjects.</p>
-                <div class="flex flex-wrap gap-8" id="subject-container">
-                  <label class="flex items-center space-x-3 cursor-pointer" id="cont-math">
-                    <input type="checkbox" name="subjects" value="mathematics" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-8">
-                    <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-9">Mathematics</span>
-                  </label>
-                  <label class="hidden items-center space-x-3 cursor-pointer" id="cont-physical-sciences">
-                    <input type="checkbox" name="subjects" value="physical-sciences" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-10">
-                    <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-11">Physical Sciences</span>
-                  </label>
-                  <label class="hidden items-center space-x-3 cursor-pointer" id="cont-afrikaans">
-                    <input type="checkbox" name="subjects" value="afrikaans" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-12">
-                    <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-13">Afrikaans</span>
-                  </label>
-                  <label class="hidden items-center space-x-3 cursor-pointer" id="cont-english">
-                    <input type="checkbox" name="subjects" value="english" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-14">
-                    <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-15">English</span>
-                  </label>
-                  <label class="hidden items-center space-x-3 cursor-pointer" id="cont-natural-sciences">
-                    <input type="checkbox" name="subjects" value="natural-sciences" class="custom-checkbox w-5 h-5 rounded-none border-[#0C102A]/20" id="gama-mnd1x4rs-16">
-                    <span class="text-base font-medium text-[#0C102A]" id="gama-mnd1x4rs-17">Natural Sciences</span>
-                  </label>
+
+                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-107">
+                  <label for="latest_mark" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-108">Latest Mark / Percentage (Approximate)</label>
+                  <input type="text" id="latest_mark" name="latest_mark" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="e.g. Maths 42%, Science 50%">
                 </div>
-              </div>
+              </section>
 
-              <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-107">
-                <label for="latest_mark" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-108">Latest Mark / Percentage (Approximate)</label>
-                <input type="text" id="latest_mark" name="latest_mark" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0" placeholder="e.g. Maths 42%, Science 50%">
-              </div>
-            </section>
+              <!-- Help Area -->
+              <section class="space-y-6 pt-6" id="gama-mncxse0x-110">
+                <h3 class="text-xs font-bold uppercase tracking-widest text-[#0C102A] border-l-4 border-[#3A5683] pl-4" id="gama-mncxse0x-111">How Can We Help?</h3>
+                <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-112">
+                  <label for="message" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-113">Message / Specific Areas of Struggle</label>
+                  <textarea id="message" name="message" rows="4" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0 resize-none" placeholder="Tell us a bit more... e.g., struggling with Trigonometry, needs upgrade for Engineering, or lacks confidence in exams." required=""></textarea>
+                </div>
+              </section>
 
-            <!-- Help Area -->
-            <section class="space-y-6 pt-6" id="gama-mncxse0x-110">
-              <h3 class="text-xs font-bold uppercase tracking-widest text-[#0C102A] border-l-4 border-[#3A5683] pl-4" id="gama-mncxse0x-111">How Can We Help?</h3>
-              <div class="flex flex-col border-b border-[#0C102A]/20 pb-2 group transition-colors focus-within:border-[#3A5683]" id="gama-mncxse0x-112">
-                <label for="message" class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8AA4C8] mb-2 group-focus-within:text-[#3A5683] transition-colors" id="gama-mncxse0x-113">Message / Specific Areas of Struggle</label>
-                <textarea id="message" name="message" rows="4" class="w-full bg-transparent border-none outline-none text-[#0C102A] text-base md:text-lg font-medium placeholder-[#0C102A]/20 focus:ring-0 resize-none" placeholder="Tell us a bit more... e.g., struggling with Trigonometry, needs upgrade for Engineering, or lacks confidence in exams." required=""></textarea>
-              </div>
-            </section>
+              <button type="submit" class="self-start mt-4 bg-[#0C102A] text-white px-8 py-4 rounded-none font-bold uppercase tracking-widest hover:bg-[#3A5683] transition-all duration-500 text-sm w-full md:w-auto flex items-center justify-center gap-3 disabled:opacity-70 disabled:cursor-not-allowed" aria-label="Submit Enquiry" id="gama-mnd1x4rs-18">
+                <span id="btn-text">Submit Enquiry</span>
+                <svg id="btn-spinner" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" id="gama-mnogniqv-0"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" id="gama-mnogniqv-1"></path>
+                </svg>
+              </button>
+            </div>
 
-            <button type="submit" class="self-start mt-4 bg-[#0C102A] text-white px-8 py-4 rounded-none font-bold uppercase tracking-widest hover:bg-[#3A5683] transition-all duration-500 text-sm w-full md:w-auto" aria-label="Submit Enquiry" id="gama-mnd1x4rs-18">
-              Submit Enquiry
-            </button>
+            <!-- Success Message Overlay -->
+            <div id="success-container" class="hidden flex-col items-center justify-center py-20 text-center animate-fade-in">
+              <div class="w-16 h-16 bg-[#3A5683] rounded-full flex items-center justify-center mb-6" id="gama-mnogniqv-2">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="gama-mnogniqv-3">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" id="gama-mnogniqv-4"></path>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-[#0C102A] mb-2" id="gama-mnogniqv-5">Thank You!</h3>
+              <p class="text-[#8AA4C8] font-medium max-w-xs mx-auto mb-8" id="gama-mnogniqv-6">Your enquiry has been sent successfully. We will get back to you shortly.</p>
+              <button type="button" onclick="resetFormAfterSuccess()" class="text-xs font-bold uppercase tracking-widest text-[#3A5683] border-b-2 border-[#3A5683] pb-1 hover:text-[#0C102A] hover:border-[#0C102A] transition-colors" id="gama-mnogniqv-7">
+                Send another message
+              </button>
+            </div>
 
             <script>
               function filterSubjects() {
@@ -316,16 +336,18 @@
                   ns: document.getElementById('cont-natural-sciences')
                 };
                 
-                // Reset all checkboxes to hidden
                 Object.values(subjects).forEach(el => {
-                  el.classList.add('hidden');
-                  el.classList.remove('flex');
-                  el.querySelector('input').checked = false;
+                  if (el) {
+                    el.classList.add('hidden');
+                    el.classList.remove('flex');
+                    el.querySelector('input').checked = false;
+                  }
                 });
 
-                // Always show Math
-                subjects.math.classList.remove('hidden');
-                subjects.math.classList.add('flex');
+                if (subjects.math) {
+                   subjects.math.classList.remove('hidden');
+                   subjects.math.classList.add('flex');
+                }
 
                 if (grade === 'primary') {
                   subjects.afrikaans.classList.remove('hidden');
@@ -340,7 +362,78 @@
                   subjects.physics.classList.add('flex');
                 }
               }
+
+              function resetFormAfterSuccess() {
+                const form = document.getElementById('gama-mncxse0x-63');
+                const formFields = document.getElementById('form-fields');
+                const successContainer = document.getElementById('success-container');
+                
+                form.reset();
+                filterSubjects();
+                
+                successContainer.classList.add('hidden');
+                successContainer.classList.remove('flex');
+                formFields.classList.remove('hidden');
+              }
+
+              async function handleSubmit(event) {
+                event.preventDefault();
+                const form = event.target;
+                const formData = new FormData(form);
+                const data = Object.fromEntries(formData.entries());
+
+                const selectedSubjects = [];
+                form.querySelectorAll('input[name="subjects"]:checked').forEach(cb => {
+                  selectedSubjects.push(cb.value);
+                });
+                data.subjects = selectedSubjects;
+
+                const submitButton = form.querySelector('button[type="submit"]');
+                const btnText = document.getElementById('btn-text');
+                const btnSpinner = document.getElementById('btn-spinner');
+                const formFields = document.getElementById('form-fields');
+                const successContainer = document.getElementById('success-container');
+
+                btnText.innerText = 'Sending...';
+                btnSpinner.classList.remove('hidden');
+                submitButton.disabled = true;
+
+                try {
+                  const response = await fetch('https://gamaai2.app.n8n.cloud/webhook/emasa', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                  });
+
+                  if (response.ok) {
+                    formFields.classList.add('hidden');
+                    successContainer.classList.remove('hidden');
+                    successContainer.classList.add('flex');
+                    window.scrollTo({ top: form.offsetTop - 100, behavior: 'smooth' });
+                  } else {
+                    alert('Something went wrong. Please try again.');
+                  }
+                } catch (error) {
+                  console.error('Submission error:', error);
+                  alert('An error occurred. Please check your connection and try again.');
+                } finally {
+                  btnText.innerText = 'Submit Enquiry';
+                  btnSpinner.classList.add('hidden');
+                  submitButton.disabled = false;
+                }
+              }
             </script>
+            <style>
+              @keyframes fade-in {
+                from { opacity: 0; transform: translateY(10px); }
+                to { opacity: 1; transform: translateY(0); }
+              }
+              .animate-fade-in {
+                animation: fade-in 0.5s ease-out forwards;
+              }
+            </style>
           </form>
         </div>
       </div>
